@@ -16,6 +16,13 @@
       "source_file": "official storefront inline SVG wordmark",
       "local_file": "ami-paris.svg"
     },
+    "amiri": {
+      "status": "verified",
+      "source_page": "https://logodad.com/svg/amiri",
+      "vector_source": "https://img.logodad.com/upload/D/0Jo/amiri.svg",
+      "source_file": "amiri.svg",
+      "local_file": "amiri.svg"
+    },
     "a-lange-sohne": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Alange_soehne_logo.svg",
@@ -556,6 +563,13 @@
       "source_file": "Jimmy Choo Ltd-Logo.wine.svg",
       "local_file": "jimmy-choo.svg"
     },
+    "jo-malone-london": {
+      "status": "verified",
+      "source_page": "https://www.jomalone.com/",
+      "vector_source": "https://www.jomalone.com/",
+      "source_file": "official storefront inline SVG wordmark",
+      "local_file": "jo-malone-london.svg"
+    },
     "john-lobb": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:John_Lobb_SAS_Logo.svg",
@@ -658,6 +672,13 @@
       "source_file": "inline messika-logo-2025 SVG symbol",
       "local_file": "messika.svg"
     },
+    "mikimoto": {
+      "status": "verified",
+      "source_page": "https://logodad.com/svg/mikimoto",
+      "vector_source": "https://img.logodad.com/upload/1/EcQ/mikimoto.svg",
+      "source_file": "mikimoto.svg",
+      "local_file": "mikimoto.svg"
+    },
     "moncler": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Logo_Moncler_Group.svg",
@@ -671,6 +692,13 @@
       "vector_source": "https://cdn.worldvectorlogo.com/logos/montblanc.svg",
       "source_file": "montblanc.svg",
       "local_file": "montblanc.svg"
+    },
+    "moynat": {
+      "status": "verified",
+      "source_page": "https://iconlogovector.com/logo/moynat-paris",
+      "vector_source": "https://iconlogovector.com/logo/moynat-paris",
+      "source_file": "MOYNAT.svg",
+      "local_file": "moynat.svg"
     },
     "omega": {
       "status": "verified",
