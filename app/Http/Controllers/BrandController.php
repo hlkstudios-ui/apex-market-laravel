@@ -14,9 +14,12 @@ class BrandController extends Controller
             ->when($request->filled('letter'), fn ($query) => $query->where('name', 'like', $request->string('letter').'%'))
             ->orderBy('name')->get()->groupBy(fn (Brand $brand) => strtoupper(substr($brand->name, 0, 1)));
 
+        $nicheCounts = Brand::query()->selectRaw('niche, count(*) as total')->groupBy('niche')->orderBy('niche')->pluck('total', 'niche');
+
         return view('brands.index', [
             'brands' => $brands,
-            'niches' => Brand::query()->distinct()->orderBy('niche')->pluck('niche'),
+            'niches' => $nicheCounts->keys(),
+            'nicheCounts' => $nicheCounts,
             'total' => Brand::count(),
         ]);
     }
