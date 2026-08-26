@@ -21,15 +21,10 @@ class Brand extends Model
 
     public function getLogoUrlAttribute(): string
     {
-        $verifiedSvgFiles = [
-            'chanel' => 'Chanel logo.svg',
-            'gucci' => 'Gucci logo.svg',
-            'hermes' => 'Hermes wordmark.svg',
-            'rolex' => 'Rolex wordmark logo.svg',
-        ];
+        $verifiedLocalLogos = ['chanel', 'gucci', 'hermes', 'rolex'];
 
-        if (isset($verifiedSvgFiles[$this->slug])) {
-            return 'https://commons.wikimedia.org/wiki/Special:Redirect/file/'.rawurlencode($verifiedSvgFiles[$this->slug]);
+        if (in_array($this->slug, $verifiedLocalLogos, true)) {
+            return asset("brand-logos/{$this->slug}.svg");
         }
 
         return route('brands.mark', $this).'?v=2';

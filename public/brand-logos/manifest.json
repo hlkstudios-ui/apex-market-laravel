@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "policy": "Only verified original SVG wordmarks are approved. Trademark rights remain with their respective owners.",
+  "logos": {
+    "chanel": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Chanel_logo.svg",
+      "source_file": "Chanel logo.svg",
+      "local_file": "chanel.svg"
+    },
+    "gucci": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gucci_logo.svg",
+      "source_file": "Gucci logo.svg",
+      "local_file": "gucci.svg"
+    },
+    "hermes": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hermes_wordmark.svg",
+      "source_file": "Hermes wordmark.svg",
+      "local_file": "hermes.svg"
+    },
+    "rolex": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Rolex_wordmark_logo.svg",
+      "source_file": "Rolex wordmark logo.svg",
+      "local_file": "rolex.svg"
+    }
+  }
+}
