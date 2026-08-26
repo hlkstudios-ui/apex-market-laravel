@@ -47,7 +47,9 @@ Apex Privé uses quiet, editorial luxury: generous negative space, strong typogr
 Build new UI from the opt-in classes in `Styling-guide.css` rather than restyling native elements page by page:
 
 - Forms: `.ui-field`, `.ui-label`, `.ui-input`, `.ui-textarea`, `.ui-help`, and `.ui-error`.
-- Dropdowns: use the reusable `<x-ui.select>` component. Its `.ui-select` div provides the visual field while the native `<select>` preserves keyboard behavior. The explicit `.ui-select__arrow` SVG lives in a fixed-width box and must never be replaced with a text glyph or manually nudged per page.
+- Native selects: `<x-ui.select>` is allowed only where an operating-system-rendered option popup is acceptable. Its explicit `.ui-select__arrow` SVG lives in a fixed-width box and must never be replaced with a text glyph or manually nudged per page.
+- Branded dropdowns: storefront filters and other visually prominent controls use the `.ui-dropdown` accessible listbox pattern from `Styling-guide.css`. Use `.ui-dropdown__trigger`, `.ui-dropdown__value`, `.ui-dropdown__arrow`, `.ui-dropdown__panel`, and `.ui-dropdown__option`. The panel must be a paper surface with calm ivory hover states, an ink selected state, and a gold selection mark—never the browser's grey native option popup.
+- Dropdown behavior: custom listboxes must manage `aria-expanded`, `aria-controls`, `role="listbox"`, `role="option"`, `aria-selected`, a hidden submitted value, arrow-key navigation, Enter/Space selection, Escape, outside click, and trigger focus restoration. A custom visual dropdown without these behaviors is incomplete.
 - Radio buttons and checkboxes: `.ui-choice-group` contains `.ui-choice` labels with their native input inside.
 - Actions: `.ui-button`, `.ui-button--secondary`, and `.ui-button--quiet` are the only standard action levels.
 - Cards: `.ui-card`, `.ui-card__media`, `.ui-card__body`, `.ui-card__eyebrow`, `.ui-card__title`, and `.ui-card__text` preserve a consistent hierarchy.
