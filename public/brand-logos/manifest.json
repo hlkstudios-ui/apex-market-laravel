@@ -556,6 +556,12 @@
       "source_file": "Jimmy Choo Ltd-Logo.wine.svg",
       "local_file": "jimmy-choo.svg"
     },
+    "john-lobb": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:John_Lobb_SAS_Logo.svg",
+      "source_file": "John Lobb SAS Logo.svg",
+      "local_file": "john-lobb.svg"
+    },
     "khaite": {
       "status": "verified",
       "source_page": "https://khaite.com/",
@@ -604,6 +610,13 @@
       "vector_source": "https://cdn.worldvectorlogo.com/logos/loewe-1.svg",
       "source_file": "loewe-1.svg",
       "local_file": "loewe.svg"
+    },
+    "loro-piana": {
+      "status": "verified",
+      "source_page": "https://en.wikipedia.org/wiki/File:Loro_Piana_logo.svg",
+      "vector_source": "https://upload.wikimedia.org/wikipedia/en/8/8d/Loro_Piana_logo.svg",
+      "source_file": "Loro Piana logo.svg",
+      "local_file": "loro-piana.svg"
     },
     "louis-vuitton": {
       "status": "verified",
