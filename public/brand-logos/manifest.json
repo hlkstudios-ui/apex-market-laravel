@@ -123,6 +123,13 @@
       "source_file": "dior.svg",
       "local_file": "christian-dior.svg"
     },
+    "ferrari": {
+      "status": "verified",
+      "source_page": "https://www.ferrari.com",
+      "vector_source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/ferrari.svg",
+      "source_file": "ferrari.svg",
+      "local_file": "ferrari.svg"
+    },
     "gucci": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Gucci_logo.svg",
@@ -134,6 +141,27 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:Hermes_wordmark.svg",
       "source_file": "Hermes wordmark.svg",
       "local_file": "hermes.svg"
+    },
+    "lamborghini": {
+      "status": "verified",
+      "source_page": "https://www.lamborghini.com",
+      "vector_source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/lamborghini.svg",
+      "source_file": "lamborghini.svg",
+      "local_file": "lamborghini.svg"
+    },
+    "mclaren": {
+      "status": "verified",
+      "source_page": "https://cars.mclaren.com",
+      "vector_source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/mclaren.svg",
+      "source_file": "mclaren.svg",
+      "local_file": "mclaren.svg"
+    },
+    "rolls-royce": {
+      "status": "verified",
+      "source_page": "https://www.rolls-roycemotorcars.com",
+      "vector_source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/rollsroyce.svg",
+      "source_file": "rollsroyce.svg",
+      "local_file": "rolls-royce.svg"
     },
     "rolex": {
       "status": "verified",
