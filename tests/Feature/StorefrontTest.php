@@ -30,6 +30,9 @@ class StorefrontTest extends TestCase
             ->assertSee('Private sourcing')
             ->assertSee('ui-icon-box', escape: false)
             ->assertSee('ui-count', escape: false)
+            ->assertSee('ui-select__arrow', escape: false)
+            ->assertSee('All departments')
+            ->assertSee("Curator's order", escape: false)
             ->assertDontSee('Account &amp; Lists', escape: false)
             ->assertDontSee('class="all-menu"', escape: false);
     }

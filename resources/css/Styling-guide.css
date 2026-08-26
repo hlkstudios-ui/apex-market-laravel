@@ -117,11 +117,14 @@ svg { display: block; flex: 0 0 auto; }
 .ui-input[aria-invalid='true'], .ui-textarea[aria-invalid='true'], .ui-select > select[aria-invalid='true'] { border-color: var(--color-danger); }
 :where(.ui-input, .ui-textarea, .ui-select > select):disabled { background: var(--color-ivory); color: var(--color-muted); cursor: not-allowed; opacity: .72; }
 
-/* Dropdown: always wrap the native select in .ui-select. Keep native keyboard behavior. */
-.ui-select { position: relative; display: block; }
-.ui-select::after { content: ''; position: absolute; top: 50%; right: 1rem; width: .45rem; height: .45rem; border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; pointer-events: none; transform: translateY(-70%) rotate(45deg); }
+/* Dropdown: use <x-ui.select>. Its div owns the border geometry and its fixed
+   arrow box keeps the chevron centered regardless of label length or font metrics. */
+.ui-select { position: relative; min-width: 0; display: block; background: var(--color-white); }
 .ui-select > select { padding-right: 2.75rem; appearance: none; cursor: pointer; }
-.ui-select:has(select:disabled)::after { opacity: .45; }
+.ui-select__arrow { position: absolute; top: 0; right: 0; bottom: 0; width: 2.75rem; display: grid; place-items: center; border-left: 1px solid transparent; color: var(--color-ink); pointer-events: none; transition: color var(--transition), border-color var(--transition); }
+.ui-select__arrow svg { width: .75rem; height: .5rem; overflow: visible; fill: none; stroke: currentColor; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
+.ui-select:focus-within .ui-select__arrow { border-left-color: var(--color-rule); color: var(--color-gold); }
+.ui-select:has(select:disabled) .ui-select__arrow { opacity: .45; }
 
 /* Radio and checkbox: label is the full target; input remains semantic and focusable. */
 .ui-choice-group { display: grid; gap: .75rem; }
