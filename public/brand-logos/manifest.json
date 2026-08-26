@@ -117,6 +117,13 @@
       "source_file": "Logo Burberry 01.svg",
       "local_file": "burberry.svg"
     },
+    "byredo": {
+      "status": "verified",
+      "source_page": "https://www.byredo.com/us_en/",
+      "vector_source": "https://www.byredo.com/images/byredo-logo.svg",
+      "source_file": "byredo-logo.svg",
+      "local_file": "byredo.svg"
+    },
     "canada-goose": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Canada_Goose_2023_logo.svg",
@@ -196,6 +203,13 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:De_Beers_Logo.svg",
       "source_file": "De Beers Logo.svg",
       "local_file": "de-beers.svg"
+    },
+    "diptyque": {
+      "status": "verified",
+      "source_page": "https://www.diptyqueparis.com/en_us/",
+      "vector_source": "https://www.diptyqueparis.com/en_us/",
+      "source_file": "inline i-logo SVG symbol",
+      "local_file": "diptyque.svg"
     },
     "dolce-gabbana": {
       "status": "verified",
