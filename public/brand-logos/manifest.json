@@ -136,6 +136,13 @@
       "source_file": "Bell and Ross.svg",
       "local_file": "bell-ross.svg"
     },
+    "bentley": {
+      "status": "verified",
+      "source_page": "https://www.bentleymotors.com/",
+      "vector_source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/bentley.svg",
+      "source_file": "bentley.svg",
+      "local_file": "bentley.svg"
+    },
     "berluti": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Berluti_logo_(2018).svg",
