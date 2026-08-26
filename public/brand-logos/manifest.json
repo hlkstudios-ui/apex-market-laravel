@@ -470,6 +470,13 @@
       "source_file": "Maison Margiela logo.svg",
       "local_file": "maison-margiela.svg"
     },
+    "manolo-blahnik": {
+      "status": "verified",
+      "source_page": "https://www.manoloblahnik.com/",
+      "vector_source": "https://www.manoloblahnik.com/static/version1787647108/frontend/ManoloBlahnik/ManoloBlahnik_Hyva/en_GB/images/logo.svg",
+      "source_file": "logo.svg",
+      "local_file": "manolo-blahnik.svg"
+    },
     "max-mara": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Max_Mara_logo.svg",
