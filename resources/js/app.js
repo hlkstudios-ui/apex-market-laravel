@@ -45,21 +45,33 @@ const fitBrandLogo = (stage) => {
         let right = 0;
         let top = sampleHeight;
         let bottom = 0;
+        let visiblePixels = 0;
+        let luminanceTotal = 0;
 
         for (let row = 0; row < sampleHeight; row += 1) {
             for (let column = 0; column < sampleWidth; column += 1) {
                 const alpha = pixels[((row * sampleWidth) + column) * 4 + 3];
 
                 if (alpha > 24) {
+                    const pixel = (row * sampleWidth) + column;
+                    const red = pixels[pixel * 4];
+                    const green = pixels[(pixel * 4) + 1];
+                    const blue = pixels[(pixel * 4) + 2];
+
                     left = Math.min(left, column);
                     right = Math.max(right, column);
                     top = Math.min(top, row);
                     bottom = Math.max(bottom, row);
+                    visiblePixels += 1;
+                    luminanceTotal += ((0.2126 * red) + (0.7152 * green) + (0.0722 * blue)) / 255;
                 }
             }
         }
 
         if (right > left && bottom > top) {
+            const visibleBoundsArea = (right - left + 1) * (bottom - top + 1);
+            const artworkDensity = visiblePixels / visibleBoundsArea;
+            const averageLuminance = luminanceTotal / visiblePixels;
             const visibleWidth = (right - left + 1) / sampleWidth;
             const visibleHeight = (bottom - top + 1) / sampleHeight;
             const widthScale = opticalWidth / visibleWidth;
@@ -74,6 +86,10 @@ const fitBrandLogo = (stage) => {
             stage.style.setProperty('--brand-logo-scale', fittedScale.toFixed(3));
             stage.style.setProperty('--brand-logo-shift-x', `${shiftX.toFixed(2)}%`);
             stage.style.setProperty('--brand-logo-shift-y', `${shiftY.toFixed(2)}%`);
+
+            if (averageLuminance > 0.82 && artworkDensity < 0.7) {
+                stage.classList.add('is-light-artwork');
+            }
         }
     } catch {
         // The unscaled contain fit remains a safe fallback.
