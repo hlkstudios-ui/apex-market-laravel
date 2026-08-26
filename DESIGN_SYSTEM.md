@@ -37,7 +37,7 @@ Apex Privé uses quiet, editorial luxury: generous negative space, strong typogr
 - Buttons: minimum 50px high, restrained square corners, clear hover and focus states.
 - Inputs: visible label where context requires it, 44px minimum height, rule-colored border, gold focus ring.
 - Cards: one border language, no arbitrary shadows. Images use consistent aspect ratios within a grid.
-- Brand cards: logo/wordmark first, name second, niche third. A missing external logo must fall back to a text monogram.
+- Brand cards: a large scalable logo/wordmark first, name second, niche third. Use a verified SVG when available; otherwise use the local SVG wordmark generator. Never enlarge favicons or low-resolution raster marks.
 - Product cards: image, maison overline, product name, price, single primary action.
 - Empty states: centered, calm, one explanation and one next action.
 
