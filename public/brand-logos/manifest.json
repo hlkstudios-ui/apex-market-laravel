@@ -160,6 +160,18 @@
       "source_file": "logo-desktop.svg",
       "local_file": "david-yurman.svg"
     },
+    "de-beers": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:De_Beers_Logo.svg",
+      "source_file": "De Beers Logo.svg",
+      "local_file": "de-beers.svg"
+    },
+    "dolce-gabbana": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dolce_%26_Gabbana_-_logo_(Italy,_1985-).svg",
+      "source_file": "Dolce & Gabbana - logo (Italy, 1985-).svg",
+      "local_file": "dolce-gabbana.svg"
+    },
     "ferrari": {
       "status": "verified",
       "source_page": "https://www.ferrari.com",
