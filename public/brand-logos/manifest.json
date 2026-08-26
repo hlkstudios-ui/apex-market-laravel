@@ -262,6 +262,13 @@
       "source_file": "Logo Chopard.svg",
       "local_file": "chopard.svg"
     },
+    "christian-louboutin": {
+      "status": "verified",
+      "source_page": "https://cdnlogo.com/logo/christian-louboutin_40581.html",
+      "vector_source": "https://static.cdnlogo.com/logos/c/85/christian-louboutin.svg",
+      "source_file": "christian-louboutin.svg",
+      "local_file": "christian-louboutin.svg"
+    },
     "christian-dior": {
       "status": "verified",
       "source_page": "https://www.dior.com",
@@ -506,6 +513,13 @@
       "vector_source": "https://khaite.com/",
       "source_file": "official storefront inline SVG wordmark",
       "local_file": "khaite.svg"
+    },
+    "knoll": {
+      "status": "verified",
+      "source_page": "https://cdnlogo.com/logo/knoll_16893.html",
+      "vector_source": "https://static.cdnlogo.com/logos/k/40/knoll.svg",
+      "source_file": "knoll.svg",
+      "local_file": "knoll.svg"
     },
     "lamborghini": {
       "status": "verified",
