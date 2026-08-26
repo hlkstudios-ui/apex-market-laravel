@@ -224,12 +224,40 @@
       "source_file": "iwc-schaffhausen.svg",
       "local_file": "iwc-schaffhausen.svg"
     },
+    "jaeger-lecoultre": {
+      "status": "verified",
+      "source_page": "https://brandlogos.net/jaeger-lecoultre-31920.html",
+      "vector_source": "https://files.brandlogos.net/svg/6pHg9QdYGc/Jaeger-LeCoultre-Oy2Z6xqnf_brandlogos.net.svg",
+      "source_file": "Jaeger-LeCoultre logo SVG",
+      "local_file": "jaeger-lecoultre.svg"
+    },
+    "jimmy-choo": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jimmy_Choo_wordmark.svg",
+      "vector_source": "https://www.logo.wine/a/logo/Jimmy_Choo_Ltd/Jimmy_Choo_Ltd-Logo.wine.svg",
+      "source_file": "Jimmy Choo Ltd-Logo.wine.svg",
+      "local_file": "jimmy-choo.svg"
+    },
     "lamborghini": {
       "status": "verified",
       "source_page": "https://www.lamborghini.com",
       "vector_source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/lamborghini.svg",
       "source_file": "lamborghini.svg",
       "local_file": "lamborghini.svg"
+    },
+    "loewe": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Loewe_logo.svg",
+      "vector_source": "https://cdn.worldvectorlogo.com/logos/loewe-1.svg",
+      "source_file": "loewe-1.svg",
+      "local_file": "loewe.svg"
+    },
+    "louis-vuitton": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Louis_Vuitton_logo.svg",
+      "vector_source": "https://www.logo.wine/a/logo/Louis_Vuitton/Louis_Vuitton-Logo.wine.svg",
+      "source_file": "Louis Vuitton-Logo.wine.svg",
+      "local_file": "louis-vuitton.svg"
     },
     "mclaren": {
       "status": "verified",
