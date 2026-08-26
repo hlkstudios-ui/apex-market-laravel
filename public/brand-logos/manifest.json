@@ -116,6 +116,13 @@
       "source_file": "Logo Chopard.svg",
       "local_file": "chopard.svg"
     },
+    "christian-dior": {
+      "status": "verified",
+      "source_page": "https://www.dior.com",
+      "vector_source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/dior.svg",
+      "source_file": "dior.svg",
+      "local_file": "christian-dior.svg"
+    },
     "gucci": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Gucci_logo.svg",

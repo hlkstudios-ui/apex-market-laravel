@@ -13,7 +13,17 @@ class BrandLogoManifestTest extends TestCase
         foreach ($manifest['logos'] as $slug => $logo) {
             $path = __DIR__.'/../../public/brand-logos/'.$logo['local_file'];
             $this->assertSame('verified', $logo['status'], $slug);
-            $this->assertStringStartsWith('https://commons.wikimedia.org/wiki/File:', $logo['source_page'], $slug);
+            $this->assertStringStartsWith('https://', $logo['source_page'], $slug);
+
+            if (! str_starts_with($logo['source_page'], 'https://commons.wikimedia.org/wiki/File:')) {
+                $this->assertArrayHasKey('vector_source', $logo, $slug);
+                $this->assertStringStartsWith(
+                    'https://raw.githubusercontent.com/simple-icons/simple-icons/',
+                    $logo['vector_source'],
+                    $slug,
+                );
+            }
+
             $this->assertFileExists($path, $slug);
             $this->assertStringContainsString('<svg', file_get_contents($path), $slug);
         }
