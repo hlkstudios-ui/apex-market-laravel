@@ -21,9 +21,7 @@ class Brand extends Model
 
     public function getLogoUrlAttribute(): string
     {
-        $verifiedLocalLogos = ['chanel', 'gucci', 'hermes', 'rolex'];
-
-        if (in_array($this->slug, $verifiedLocalLogos, true)) {
+        if (is_file(public_path("brand-logos/{$this->slug}.svg"))) {
             return asset("brand-logos/{$this->slug}.svg");
         }
 

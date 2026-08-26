@@ -2,6 +2,48 @@
   "schema_version": 1,
   "policy": "Only verified original SVG wordmarks are approved. Trademark rights remain with their respective owners.",
   "logos": {
+    "a-lange-sohne": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Alange_soehne_logo.svg",
+      "source_file": "Alange soehne logo.svg",
+      "local_file": "a-lange-sohne.svg"
+    },
+    "acne-studios": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Acne_studios_logo,_2021.svg",
+      "source_file": "Acne studios logo, 2021.svg",
+      "local_file": "acne-studios.svg"
+    },
+    "aesop": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Aesop_logo_2013.svg",
+      "source_file": "Aesop logo 2013.svg",
+      "local_file": "aesop.svg"
+    },
+    "alexander-mcqueen": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:McQueen_2024_logo.svg",
+      "source_file": "McQueen 2024 logo.svg",
+      "local_file": "alexander-mcqueen.svg"
+    },
+    "apc": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:A.P.C._logo.svg",
+      "source_file": "A.P.C. logo.svg",
+      "local_file": "apc.svg"
+    },
+    "aston-martin": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Aston_Martin_wordmark.svg",
+      "source_file": "Aston Martin wordmark.svg",
+      "local_file": "aston-martin.svg"
+    },
+    "audemars-piguet": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Logo_Audemars_Piguet.svg",
+      "source_file": "Logo Audemars Piguet.svg",
+      "local_file": "audemars-piguet.svg"
+    },
     "chanel": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Chanel_logo.svg",
