@@ -242,12 +242,24 @@
       "source_file": "iwc-schaffhausen.svg",
       "local_file": "iwc-schaffhausen.svg"
     },
+    "isabel-marant": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Isabel_Marant_2023_logo.svg",
+      "source_file": "Isabel Marant 2023 logo.svg",
+      "local_file": "isabel-marant.svg"
+    },
     "jaeger-lecoultre": {
       "status": "verified",
       "source_page": "https://brandlogos.net/jaeger-lecoultre-31920.html",
       "vector_source": "https://files.brandlogos.net/svg/6pHg9QdYGc/Jaeger-LeCoultre-Oy2Z6xqnf_brandlogos.net.svg",
       "source_file": "Jaeger-LeCoultre logo SVG",
       "local_file": "jaeger-lecoultre.svg"
+    },
+    "jil-sander": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jil_Sander_logo.svg",
+      "source_file": "Jil Sander logo.svg",
+      "local_file": "jil-sander.svg"
     },
     "jimmy-choo": {
       "status": "verified",
@@ -282,6 +294,12 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:Maison_Margiela_logo.svg",
       "source_file": "Maison Margiela logo.svg",
       "local_file": "maison-margiela.svg"
+    },
+    "max-mara": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Max_Mara_logo.svg",
+      "source_file": "Max Mara logo.svg",
+      "local_file": "max-mara.svg"
     },
     "mclaren": {
       "status": "verified",
