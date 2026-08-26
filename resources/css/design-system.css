@@ -31,6 +31,12 @@
     --radius-md: .5rem;
     --shadow-soft: 0 14px 40px rgb(16 16 15 / 8%);
     --transition: 160ms ease;
+    --brand-card-height: 15.25rem;
+    --brand-logo-stage-height: 11.25rem;
+    --brand-logo-optical-width: 76%;
+    --brand-logo-optical-height: 38%;
+    --brand-logo-scale-min: .72;
+    --brand-logo-scale-max: 1.9;
 }
 
 body { background: var(--color-paper); color: var(--color-ink); font-family: var(--font-body); }

@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Order;
 use App\Models\Product;
@@ -29,6 +30,18 @@ class StorefrontTest extends TestCase
         $this->assertSame(2, $order->items()->first()->quantity);
         $this->assertSame(3, $p->fresh()->stock);
         $this->assertEmpty(session('cart', []));
+    }
+
+    public function test_designer_directory_uses_reusable_logos_and_continuous_indices(): void
+    {
+        Brand::create(['name' => 'Alaïa', 'slug' => 'alaia', 'niche' => 'Fashion']);
+        Brand::create(['name' => 'Berluti', 'slug' => 'berluti', 'niche' => 'Fashion']);
+
+        $this->get(route('brands.index'))
+            ->assertOk()
+            ->assertSeeInOrder(['001', '002'])
+            ->assertSee('data-brand-logo', escape: false)
+            ->assertSee('brand-logo__image', escape: false);
     }
 
     private function product(): Product
