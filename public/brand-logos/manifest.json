@@ -301,6 +301,18 @@
       "source_file": "patek-philippe.svg",
       "local_file": "patek-philippe.svg"
     },
+    "pomellato": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pomellato_logo.svg",
+      "source_file": "Pomellato logo.svg",
+      "local_file": "pomellato.svg"
+    },
+    "rimowa": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:RIMOWA_Logo.svg",
+      "source_file": "RIMOWA Logo.svg",
+      "local_file": "rimowa.svg"
+    },
     "rolls-royce": {
       "status": "verified",
       "source_page": "https://www.rolls-roycemotorcars.com",
