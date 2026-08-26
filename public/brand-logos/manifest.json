@@ -44,6 +44,30 @@
       "source_file": "Logo Audemars Piguet.svg",
       "local_file": "audemars-piguet.svg"
     },
+    "balenciaga": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Balenciaga2017Logo.svg",
+      "source_file": "Balenciaga2017Logo.svg",
+      "local_file": "balenciaga.svg"
+    },
+    "balmain": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Balmain_wordmark.svg",
+      "source_file": "Balmain wordmark.svg",
+      "local_file": "balmain.svg"
+    },
+    "bang-olufsen": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bang_and_Olufsen_logo.svg",
+      "source_file": "Bang and Olufsen logo.svg",
+      "local_file": "bang-olufsen.svg"
+    },
+    "blancpain": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Blancpain_logo.svg",
+      "source_file": "Blancpain logo.svg",
+      "local_file": "blancpain.svg"
+    },
     "chanel": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Chanel_logo.svg",
