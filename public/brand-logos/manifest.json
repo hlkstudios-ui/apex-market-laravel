@@ -2,6 +2,13 @@
   "schema_version": 1,
   "policy": "Only verified original SVG wordmarks are approved. Trademark rights remain with their respective owners.",
   "logos": {
+    "aime-leon-dore": {
+      "status": "verified",
+      "source_page": "https://www.aimeleondore.com/",
+      "vector_source": "https://www.aimeleondore.com/",
+      "source_file": "official storefront inline SVG wordmark",
+      "local_file": "aime-leon-dore.svg"
+    },
     "a-lange-sohne": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Alange_soehne_logo.svg",
