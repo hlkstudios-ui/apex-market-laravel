@@ -32,6 +32,12 @@
       "source_file": "A.P.C. logo.svg",
       "local_file": "apc.svg"
     },
+    "artemide": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Artemide_logo.svg",
+      "source_file": "Artemide logo.svg",
+      "local_file": "artemide.svg"
+    },
     "aston-martin": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Aston_Martin_wordmark.svg",
@@ -43,6 +49,13 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:Logo_Audemars_Piguet.svg",
       "source_file": "Logo Audemars Piguet.svg",
       "local_file": "audemars-piguet.svg"
+    },
+    "baker-furniture": {
+      "status": "verified",
+      "source_page": "https://www.bakerfurniture.com/",
+      "vector_source": "https://www.bakerfurniture.com/media/3v5dcqhv/baker-primary-logo.svg",
+      "source_file": "baker-primary-logo.svg",
+      "local_file": "baker-furniture.svg"
     },
     "balenciaga": {
       "status": "verified",
