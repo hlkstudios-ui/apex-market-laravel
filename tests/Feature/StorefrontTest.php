@@ -19,6 +19,19 @@ class StorefrontTest extends TestCase
         $this->get('/')->assertOk()->assertSee($p->name);
     }
 
+    public function test_global_navigation_uses_the_luxury_house_hierarchy(): void
+    {
+        $this->get('/')
+            ->assertOk()
+            ->assertSee('house-service-bar', escape: false)
+            ->assertSee('The house of distinction')
+            ->assertSee('Search the collection')
+            ->assertSee('Designers A–Z')
+            ->assertSee('Private sourcing')
+            ->assertDontSee('Account &amp; Lists', escape: false)
+            ->assertDontSee('class="all-menu"', escape: false);
+    }
+
     public function test_customer_can_add_item_and_complete_checkout(): void
     {
         $p = $this->product();

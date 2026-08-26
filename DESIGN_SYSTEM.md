@@ -34,6 +34,7 @@ Apex Privé uses quiet, editorial luxury: generous negative space, strong typogr
 
 ## Components
 
+- Global navigation: use a warm paper surface, centered editorial wordmark, one quiet search line, and restrained uppercase department links. Client utilities remain visually secondary; the bag count is a typographic superscript, never a marketplace badge. Desktop navigation has three measured tiers (service, identity/utilities, departments). Mobile keeps the wordmark centered, the bag visible, search immediately accessible, and departments inside one calm disclosure menu. Do not reintroduce delivery tiles, promotional color blocks, crowded dropdown labels, or an “All” menu.
 - Buttons: minimum 50px high, restrained square corners, clear hover and focus states.
 - Inputs: visible label where context requires it, 44px minimum height, rule-colored border, gold focus ring.
 - Cards: one border language, no arbitrary shadows. Images use consistent aspect ratios within a grid.
