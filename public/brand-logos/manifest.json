@@ -74,6 +74,12 @@
       "source_file": "Blancpain logo.svg",
       "local_file": "blancpain.svg"
     },
+    "bottega-veneta": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Logo_Bottega_Veneta.svg",
+      "source_file": "Logo Bottega Veneta.svg",
+      "local_file": "bottega-veneta.svg"
+    },
     "boucheron": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Logo_of_Boucheron.svg",
@@ -91,6 +97,12 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:Logo_Burberry_01.svg",
       "source_file": "Logo Burberry 01.svg",
       "local_file": "burberry.svg"
+    },
+    "canada-goose": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Canada_Goose_2023_logo.svg",
+      "source_file": "Canada Goose 2023 logo.svg",
+      "local_file": "canada-goose.svg"
     },
     "cartier": {
       "status": "verified",
@@ -264,6 +276,12 @@
       "vector_source": "https://www.logo.wine/a/logo/Louis_Vuitton/Louis_Vuitton-Logo.wine.svg",
       "source_file": "Louis Vuitton-Logo.wine.svg",
       "local_file": "louis-vuitton.svg"
+    },
+    "maison-margiela": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Maison_Margiela_logo.svg",
+      "source_file": "Maison Margiela logo.svg",
+      "local_file": "maison-margiela.svg"
     },
     "mclaren": {
       "status": "verified",
