@@ -92,11 +92,29 @@
       "source_file": "Logo Burberry 01.svg",
       "local_file": "burberry.svg"
     },
+    "cartier": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cartier_logo.svg",
+      "source_file": "Cartier logo.svg",
+      "local_file": "cartier.svg"
+    },
+    "cassina": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cassina_SpA_logo.svg",
+      "source_file": "Cassina SpA logo.svg",
+      "local_file": "cassina.svg"
+    },
     "chanel": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Chanel_logo.svg",
       "source_file": "Chanel logo.svg",
       "local_file": "chanel.svg"
+    },
+    "chopard": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Logo_Chopard.svg",
+      "source_file": "Logo Chopard.svg",
+      "local_file": "chopard.svg"
     },
     "gucci": {
       "status": "verified",
