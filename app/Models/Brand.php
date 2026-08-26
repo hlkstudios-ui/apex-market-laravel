@@ -32,6 +32,6 @@ class Brand extends Model
             return 'https://commons.wikimedia.org/wiki/Special:Redirect/file/'.rawurlencode($verifiedSvgFiles[$this->slug]);
         }
 
-        return route('brands.mark', $this);
+        return route('brands.mark', $this).'?v=2';
     }
 }
