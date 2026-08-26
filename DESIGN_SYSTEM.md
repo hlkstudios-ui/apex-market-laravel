@@ -21,6 +21,7 @@ Apex Privé uses quiet, editorial luxury: generous negative space, strong typogr
 - Desktop sections use `--space-7` vertically. Mobile sections reduce through the token breakpoint.
 - Primary grids use 4 columns for discovery, 3 for products, 2 for detail layouts, and 1 on mobile.
 - Align headings, filters, cards, and footer content to the same shell edges.
+- Editorial mastheads must explicitly use block flow because the application header has its own navigation layout. Overline, title, and description stack vertically and never share a row.
 
 ## Color and surfaces
 
