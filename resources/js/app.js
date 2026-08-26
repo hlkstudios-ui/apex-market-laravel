@@ -47,6 +47,11 @@ const fitBrandLogo = (stage) => {
         let bottom = 0;
         let visiblePixels = 0;
         let luminanceTotal = 0;
+        let foregroundLeft = sampleWidth;
+        let foregroundRight = 0;
+        let foregroundTop = sampleHeight;
+        let foregroundBottom = 0;
+        let foregroundPixels = 0;
 
         for (let row = 0; row < sampleHeight; row += 1) {
             for (let column = 0; column < sampleWidth; column += 1) {
@@ -63,7 +68,17 @@ const fitBrandLogo = (stage) => {
                     top = Math.min(top, row);
                     bottom = Math.max(bottom, row);
                     visiblePixels += 1;
-                    luminanceTotal += ((0.2126 * red) + (0.7152 * green) + (0.0722 * blue)) / 255;
+                    const luminance = ((0.2126 * red) + (0.7152 * green) + (0.0722 * blue)) / 255;
+
+                    luminanceTotal += luminance;
+
+                    if (luminance < 0.72) {
+                        foregroundLeft = Math.min(foregroundLeft, column);
+                        foregroundRight = Math.max(foregroundRight, column);
+                        foregroundTop = Math.min(foregroundTop, row);
+                        foregroundBottom = Math.max(foregroundBottom, row);
+                        foregroundPixels += 1;
+                    }
                 }
             }
         }
@@ -72,14 +87,21 @@ const fitBrandLogo = (stage) => {
             const visibleBoundsArea = (right - left + 1) * (bottom - top + 1);
             const artworkDensity = visiblePixels / visibleBoundsArea;
             const averageLuminance = luminanceTotal / visiblePixels;
-            const visibleWidth = (right - left + 1) / sampleWidth;
-            const visibleHeight = (bottom - top + 1) / sampleHeight;
+            const hasDarkForeground = foregroundPixels > 20
+                && foregroundRight > foregroundLeft
+                && foregroundBottom > foregroundTop;
+            const artworkLeft = hasDarkForeground ? foregroundLeft : left;
+            const artworkRight = hasDarkForeground ? foregroundRight : right;
+            const artworkTop = hasDarkForeground ? foregroundTop : top;
+            const artworkBottom = hasDarkForeground ? foregroundBottom : bottom;
+            const visibleWidth = (artworkRight - artworkLeft + 1) / sampleWidth;
+            const visibleHeight = (artworkBottom - artworkTop + 1) / sampleHeight;
             const widthScale = opticalWidth / visibleWidth;
             const heightScale = opticalHeight / visibleHeight;
             const opticalScale = Math.min(widthScale, heightScale);
             const fittedScale = Math.max(minimumScale, Math.min(maximumScale, opticalScale));
-            const visibleCenterX = (left + right) / 2;
-            const visibleCenterY = (top + bottom) / 2;
+            const visibleCenterX = (artworkLeft + artworkRight) / 2;
+            const visibleCenterY = (artworkTop + artworkBottom) / 2;
             const shiftX = ((sampleWidth / 2 - visibleCenterX) / sampleWidth) * 100 * fittedScale;
             const shiftY = ((sampleHeight / 2 - visibleCenterY) / sampleHeight) * 100 * fittedScale;
 
@@ -87,7 +109,7 @@ const fitBrandLogo = (stage) => {
             stage.style.setProperty('--brand-logo-shift-x', `${shiftX.toFixed(2)}%`);
             stage.style.setProperty('--brand-logo-shift-y', `${shiftY.toFixed(2)}%`);
 
-            if (averageLuminance > 0.82 && artworkDensity < 0.7) {
+            if (!hasDarkForeground && averageLuminance > 0.82 && artworkDensity < 0.7) {
                 stage.classList.add('is-light-artwork');
             }
         }
