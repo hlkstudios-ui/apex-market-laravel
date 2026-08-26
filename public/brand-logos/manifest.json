@@ -320,6 +320,13 @@
       "source_file": "logo.svg",
       "local_file": "dries-van-noten.svg"
     },
+    "faberge": {
+      "status": "verified",
+      "source_page": "https://www.faberge.com/",
+      "vector_source": "https://www.faberge.com/",
+      "source_file": "official storefront inline shopLogo SVG",
+      "local_file": "faberge.svg"
+    },
     "fear-of-god": {
       "status": "verified",
       "source_page": "https://fearofgod.com/",
@@ -334,11 +341,25 @@
       "source_file": "ferrari.svg",
       "local_file": "ferrari.svg"
     },
+    "fornasetti": {
+      "status": "verified",
+      "source_page": "https://www.fornasetti.com/",
+      "vector_source": "https://www.fornasetti.com/cdn/shop/files/logo-fornasetti2.svg?v=1760345022&width=500",
+      "source_file": "logo-fornasetti2.svg",
+      "local_file": "fornasetti.svg"
+    },
     "franck-muller": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Fmlogo.svg",
       "source_file": "Fmlogo.svg",
       "local_file": "franck-muller.svg"
+    },
+    "gabriela-hearst": {
+      "status": "verified",
+      "source_page": "https://gabrielahearst.com/",
+      "vector_source": "https://gabrielahearst.com/",
+      "source_file": "official storefront inline SVG wordmark",
+      "local_file": "gabriela-hearst.svg"
     },
     "georg-jensen": {
       "status": "verified",
