@@ -118,6 +118,12 @@
       "source_file": "logo.svg",
       "local_file": "buccellati.svg"
     },
+    "bugatti": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:2022_Bugatti_wordmark.svg",
+      "source_file": "2022 Bugatti wordmark.svg",
+      "local_file": "bugatti.svg"
+    },
     "bulgari": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Bulgari_logo.svg",
@@ -260,6 +266,12 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:Givenchy_-_wordmark_(France,_2003).svg",
       "source_file": "Givenchy - wordmark (France, 2003).svg",
       "local_file": "givenchy.svg"
+    },
+    "goyard": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Goyard_wordmark.svg",
+      "source_file": "Goyard wordmark.svg",
+      "local_file": "goyard.svg"
     },
     "grand-seiko": {
       "status": "verified",
