@@ -35,5 +35,12 @@ class BrandLogoManifestTest extends TestCase
 
         $files = glob(__DIR__.'/../../public/brand-logos/*.svg');
         $this->assertCount(count($manifest['logos']), $files, 'Every local SVG must be represented in the provenance manifest.');
+
+        foreach ($manifest['pending'] ?? [] as $slug => $logo) {
+            $this->assertArrayNotHasKey($slug, $manifest['logos'], $slug);
+            $this->assertSame('source_verified_asset_pending', $logo['status'], $slug);
+            $this->assertStringStartsWith('https://', $logo['source_page'], $slug);
+            $this->assertNotSame('', $logo['reason'], $slug);
+        }
     }
 }

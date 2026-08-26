@@ -230,5 +230,31 @@
       "source_file": "Rolex wordmark logo.svg",
       "local_file": "rolex.svg"
     }
+  },
+  "pending": {
+    "grand-seiko": {
+      "status": "source_verified_asset_pending",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Grand_Seiko_Logo.svg",
+      "source_file": "Grand Seiko Logo.svg",
+      "reason": "Verified original SVG payload is awaiting a clean download."
+    },
+    "guerlain": {
+      "status": "source_verified_asset_pending",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Guerlain_-_logo_(France,_2022-).svg",
+      "source_file": "Guerlain - logo (France, 2022-).svg",
+      "reason": "Verified current 2022 wordmark payload is awaiting a clean download."
+    },
+    "hublot": {
+      "status": "source_verified_asset_pending",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hublot-logo.svg",
+      "source_file": "Hublot-logo.svg",
+      "reason": "Verified Hublot SA vector payload is awaiting a clean download."
+    },
+    "iwc-schaffhausen": {
+      "status": "source_verified_asset_pending",
+      "source_page": "https://commons.wikimedia.org/wiki/File:International_Watch_Company_logo.svg",
+      "source_file": "International Watch Company logo.svg",
+      "reason": "Verified original SVG payload is awaiting a clean download."
+    }
   }
 }
