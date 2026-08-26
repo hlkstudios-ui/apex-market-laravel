@@ -28,6 +28,8 @@ class StorefrontTest extends TestCase
             ->assertSee('Search the collection')
             ->assertSee('Designers A–Z')
             ->assertSee('Private sourcing')
+            ->assertSee('ui-icon-box', escape: false)
+            ->assertSee('ui-count', escape: false)
             ->assertDontSee('Account &amp; Lists', escape: false)
             ->assertDontSee('class="all-menu"', escape: false);
     }

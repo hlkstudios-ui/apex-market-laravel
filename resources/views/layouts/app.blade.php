@@ -26,9 +26,12 @@
         <div class="house-actions" aria-label="Account and shopping">
             <a class="house-account" href="{{route('checkout.create')}}">Client account</a>
             <a class="house-orders" href="{{route('cart.index')}}">Orders</a>
-            <a class="house-bag" href="{{route('cart.index')}}" aria-label="Shopping bag, {{array_sum(session('cart',[]))}} items">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8.5h13l-.7 12h-11.6l-.7-12Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
-                <span>Bag</span><b>{{array_sum(session('cart',[]))}}</b>
+            <a class="house-bag ui-icon-label" href="{{route('cart.index')}}" aria-label="Shopping bag, {{array_sum(session('cart',[]))}} items">
+                <span class="ui-icon-box">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8.5h13l-.7 12h-11.6l-.7-12Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+                    <b class="ui-count">{{array_sum(session('cart',[]))}}</b>
+                </span>
+                <span class="house-bag-label">Bag</span>
             </a>
         </div>
     </div>

@@ -1,6 +1,6 @@
 # Apex Privé Design System
 
-This is the go-to reference for every existing and future interface. The executable tokens and shared utility rules live in `resources/css/design-system.css`. Page-specific components live in `resources/css/app.css` and must consume these tokens.
+This is the go-to reference for every existing and future interface. The executable tokens live in `resources/css/design-system.css`; mandatory implementation rules and shared alignment primitives live in `resources/css/Styling-guide.css`. Page-specific components live in `resources/css/app.css` and must consume both.
 
 ## Visual direction
 

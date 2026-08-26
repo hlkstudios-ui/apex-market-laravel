@@ -1,0 +1,86 @@
+/**
+ * APEX PRIVÉ — EXECUTABLE STYLING GUIDE
+ *
+ * Every new component must pass these checks before it is complete:
+ * 1. Use design-system tokens; do not introduce an isolated color, font, radius, or shadow.
+ * 2. Align to --page-gutter / --content-width and use the shared spacing scale.
+ * 3. Give controls a minimum 40px interaction area and a visible :focus-visible state.
+ * 4. Keep SVG geometry in a fixed box; never align labels against an SVG's viewBox directly.
+ * 5. Position badges/counts relative to that fixed icon box, not to text or the whole control.
+ * 6. Check 1440px, 1024px, 768px, and 390px widths; no horizontal overflow is allowed.
+ * 7. Do not depend on hover for meaning, and respect reduced-motion preferences.
+ * 8. Reuse an existing component class before adding a page-specific override.
+ */
+
+:root {
+    --control-hit-area: 2.5rem;
+    --icon-size-sm: 1.25rem;
+    --count-size: .875rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { text-size-adjust: 100%; }
+
+body { min-width: 20rem; }
+
+button, input, select, textarea { font: inherit; }
+
+button, a { -webkit-tap-highlight-color: transparent; }
+
+svg { display: block; flex: 0 0 auto; }
+
+:where(button, a, input, select, textarea):focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+}
+
+/* Canonical icon + label + count alignment pattern. */
+.ui-icon-label {
+    min-height: var(--control-hit-area);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-1);
+    line-height: 1;
+}
+
+.ui-icon-box {
+    position: relative;
+    width: var(--icon-size-sm);
+    height: var(--icon-size-sm);
+    display: grid;
+    flex: 0 0 var(--icon-size-sm);
+    place-items: center;
+}
+
+.ui-icon-box > svg { width: 100%; height: 100%; }
+
+.ui-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--count-size);
+    height: var(--count-size);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--color-ink);
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-size: .5rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0;
+    line-height: 1;
+    transform: translate(45%, -45%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
