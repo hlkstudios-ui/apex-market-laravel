@@ -118,6 +118,13 @@
       "source_file": "Balmain wordmark.svg",
       "local_file": "balmain.svg"
     },
+    "baxter": {
+      "status": "verified",
+      "source_page": "https://www.baxter.it/en",
+      "vector_source": "https://www.baxter.it/en",
+      "source_file": "official storefront inline SVG logo",
+      "local_file": "baxter.svg"
+    },
     "bang-olufsen": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Bang_and_Olufsen_logo.svg",
@@ -194,6 +201,13 @@
       "vector_source": "https://static.cdnlogo.com/logos/b/71/breitling.svg",
       "source_file": "breitling.svg",
       "local_file": "breitling.svg"
+    },
+    "brunello-cucinelli": {
+      "status": "verified",
+      "source_page": "https://de.wikipedia.org/wiki/Datei:Brunello_Cucinelli_(Unternehmen)_logo.svg",
+      "vector_source": "https://upload.wikimedia.org/wikipedia/de/3/31/Brunello_Cucinelli_%28Unternehmen%29_logo.svg",
+      "source_file": "Brunello Cucinelli (Unternehmen) logo.svg",
+      "local_file": "brunello-cucinelli.svg"
     },
     "buccellati": {
       "status": "verified",
@@ -455,6 +469,13 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:Goyard_wordmark.svg",
       "source_file": "Goyard wordmark.svg",
       "local_file": "goyard.svg"
+    },
+    "graff": {
+      "status": "verified",
+      "source_page": "https://en.wikipedia.org/wiki/File:Graff_Logo.svg",
+      "vector_source": "https://upload.wikimedia.org/wikipedia/en/8/80/Graff_Logo.svg",
+      "source_file": "Graff Logo.svg",
+      "local_file": "graff.svg"
     },
     "grand-seiko": {
       "status": "verified",

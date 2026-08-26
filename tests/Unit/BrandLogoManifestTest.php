@@ -23,12 +23,19 @@ class BrandLogoManifestTest extends TestCase
                     $logo['vector_source'],
                     'https://raw.githubusercontent.com/simple-icons/simple-icons/',
                 );
+                $isWikipediaVector = preg_match(
+                    '~^https://[a-z-]+\.wikipedia\.org/wiki/(?:File|Datei):~',
+                    $logo['source_page'],
+                ) === 1 && str_starts_with(
+                    $logo['vector_source'],
+                    'https://upload.wikimedia.org/wikipedia/',
+                );
                 $sourceHost = parse_url($logo['source_page'], PHP_URL_HOST);
                 $vectorHost = parse_url($logo['vector_source'], PHP_URL_HOST);
                 $isOfficialAsset = $sourceHost === $vectorHost
                     || str_ends_with($vectorHost, '.'.$sourceHost);
 
-                $this->assertTrue($isCuratedVector || $isOfficialAsset, $slug.' must use an official or curated vector source.');
+                $this->assertTrue($isCuratedVector || $isWikipediaVector || $isOfficialAsset, $slug.' must use an official or curated vector source.');
             }
 
             $this->assertFileExists($path, $slug);
