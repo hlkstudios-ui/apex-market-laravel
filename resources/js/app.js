@@ -16,6 +16,90 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
+const closeDropdown = (dropdown, restoreFocus = false) => {
+    const trigger = dropdown.querySelector('[data-dropdown-trigger]');
+    const panel = dropdown.querySelector('[data-dropdown-panel]');
+
+    trigger?.setAttribute('aria-expanded', 'false');
+    if (panel) panel.hidden = true;
+    if (restoreFocus) trigger?.focus();
+};
+
+const openDropdown = (dropdown, focusDirection = 0) => {
+    document.querySelectorAll('[data-dropdown]').forEach((other) => {
+        if (other !== dropdown) closeDropdown(other);
+    });
+
+    const trigger = dropdown.querySelector('[data-dropdown-trigger]');
+    const panel = dropdown.querySelector('[data-dropdown-panel]');
+    const options = [...dropdown.querySelectorAll('[data-dropdown-option]:not([disabled])')];
+
+    trigger?.setAttribute('aria-expanded', 'true');
+    if (panel) panel.hidden = false;
+
+    if (focusDirection) {
+        const selectedIndex = options.findIndex((option) => option.getAttribute('aria-selected') === 'true');
+        const fallback = focusDirection > 0 ? 0 : options.length - 1;
+        options[selectedIndex >= 0 ? selectedIndex : fallback]?.focus();
+    }
+};
+
+document.querySelectorAll('[data-dropdown]').forEach((dropdown) => {
+    const trigger = dropdown.querySelector('[data-dropdown-trigger]');
+    const panel = dropdown.querySelector('[data-dropdown-panel]');
+    const input = dropdown.querySelector('[data-dropdown-input]');
+    const value = dropdown.querySelector('[data-dropdown-value]');
+    const options = [...dropdown.querySelectorAll('[data-dropdown-option]')];
+
+    const selectOption = (option) => {
+        options.forEach((item) => item.setAttribute('aria-selected', String(item === option)));
+        if (input) input.value = option.dataset.value ?? '';
+        if (value) value.textContent = option.textContent.trim();
+        input?.dispatchEvent(new Event('change', { bubbles: true }));
+        closeDropdown(dropdown, true);
+    };
+
+    trigger?.addEventListener('click', () => {
+        if (trigger.getAttribute('aria-expanded') === 'true') closeDropdown(dropdown);
+        else openDropdown(dropdown);
+    });
+
+    trigger?.addEventListener('keydown', (event) => {
+        if (['ArrowDown', 'ArrowUp'].includes(event.key)) {
+            event.preventDefault();
+            openDropdown(dropdown, event.key === 'ArrowDown' ? 1 : -1);
+        }
+    });
+
+    options.forEach((option) => option.addEventListener('click', () => selectOption(option)));
+
+    panel?.addEventListener('keydown', (event) => {
+        const available = options.filter((option) => !option.disabled);
+        const current = available.indexOf(document.activeElement);
+
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            closeDropdown(dropdown, true);
+        } else if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+            event.preventDefault();
+            const movement = event.key === 'ArrowDown' ? 1 : -1;
+            available[(current + movement + available.length) % available.length]?.focus();
+        } else if (event.key === 'Home' || event.key === 'End') {
+            event.preventDefault();
+            available[event.key === 'Home' ? 0 : available.length - 1]?.focus();
+        } else if ((event.key === 'Enter' || event.key === ' ') && document.activeElement?.matches('[data-dropdown-option]')) {
+            event.preventDefault();
+            selectOption(document.activeElement);
+        }
+    });
+});
+
+document.addEventListener('click', (event) => {
+    document.querySelectorAll('[data-dropdown]').forEach((dropdown) => {
+        if (!dropdown.contains(event.target)) closeDropdown(dropdown);
+    });
+});
+
 const fitBrandLogo = (stage) => {
     const image = stage.querySelector('.brand-logo__image');
 
