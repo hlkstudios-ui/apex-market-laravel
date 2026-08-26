@@ -454,6 +454,13 @@
       "source_file": "Guerlain Logo 2022.svg",
       "local_file": "guerlain.svg"
     },
+    "harry-winston": {
+      "status": "verified",
+      "source_page": "https://cdnlogo.com/logo/harry-winston_12404.html",
+      "vector_source": "https://static.cdnlogo.com/logos/h/97/harry-winston.svg",
+      "source_file": "harry-winston.svg",
+      "local_file": "harry-winston.svg"
+    },
     "hermes": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Hermes_wordmark.svg",
@@ -527,6 +534,13 @@
       "vector_source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/lamborghini.svg",
       "source_file": "lamborghini.svg",
       "local_file": "lamborghini.svg"
+    },
+    "lalique": {
+      "status": "verified",
+      "source_page": "https://cdnlogo.com/logo/lalique_6575.html",
+      "vector_source": "https://static.cdnlogo.com/logos/l/59/lalique.svg",
+      "source_file": "lalique.svg",
+      "local_file": "lalique.svg"
     },
     "loewe": {
       "status": "verified",
