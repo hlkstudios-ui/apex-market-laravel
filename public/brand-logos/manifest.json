@@ -9,6 +9,13 @@
       "source_file": "official storefront inline SVG wordmark",
       "local_file": "aime-leon-dore.svg"
     },
+    "ami-paris": {
+      "status": "verified",
+      "source_page": "https://www.amiparis.com/",
+      "vector_source": "https://www.amiparis.com/",
+      "source_file": "official storefront inline SVG wordmark",
+      "local_file": "ami-paris.svg"
+    },
     "a-lange-sohne": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Alange_soehne_logo.svg",
