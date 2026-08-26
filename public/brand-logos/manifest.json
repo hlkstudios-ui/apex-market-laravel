@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "policy": "Only verified original SVG wordmarks are approved. Trademark rights remain with their respective owners.",
+  "policy": "Only verified path-based logo artwork is approved. Official SVG sources are preferred; when a brand publishes only a high-resolution master, any path conversion is explicitly documented. Trademark rights remain with their respective owners.",
   "logos": {
     "aime-leon-dore": {
       "status": "verified",
@@ -15,6 +15,14 @@
       "vector_source": "https://www.amiparis.com/",
       "source_file": "official storefront inline SVG wordmark",
       "local_file": "ami-paris.svg"
+    },
+    "ann-demeulemeester": {
+      "status": "verified",
+      "source_page": "https://anndemeulemeester.com/",
+      "vector_source": "https://anndemeulemeester.com/cdn/shop/files/AD_LOGO_BLACK_3500px.webp?v=1722324065",
+      "source_file": "official AD_LOGO_BLACK_3500px storefront master",
+      "derivation": "Path geometry traced from the official 3500-pixel transparent master because the storefront does not publish an SVG logo asset.",
+      "local_file": "ann-demeulemeester.svg"
     },
     "amiri": {
       "status": "verified",
@@ -267,6 +275,13 @@
       "source_file": "Cartier logo.svg",
       "local_file": "cartier.svg"
     },
+    "chaumet": {
+      "status": "verified",
+      "source_page": "https://brandlogos.net/chaumet-logo-vector-94721.html",
+      "vector_source": "https://files.brandlogos.net/svg/WMXi7xYVyY/Chaumet-OBepi8rT8_brandlogos.net.svg",
+      "source_file": "Chaumet-OBepi8rT8_brandlogos.net.svg",
+      "local_file": "chaumet.svg"
+    },
     "cassina": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Cassina_SpA_logo.svg",
@@ -377,6 +392,14 @@
       "source_file": "Dolce & Gabbana - logo (Italy, 1985-).svg",
       "local_file": "dolce-gabbana.svg"
     },
+    "dr-barbara-sturm": {
+      "status": "verified",
+      "source_page": "https://cdn11.bigcommerce.com/s-dwdwr5marw/stencil/3cd8bed0-6e19-013f-13b9-160cecaca749/e/6861bc40-7479-013f-b450-4a711bf66c68/img/logo.svg",
+      "vector_source": "https://cdn11.bigcommerce.com/s-dwdwr5marw/stencil/3cd8bed0-6e19-013f-13b9-160cecaca749/e/6861bc40-7479-013f-b450-4a711bf66c68/img/logo.svg",
+      "official_page": "https://eu.drsturm.com/es",
+      "source_file": "official storefront img/logo.svg",
+      "local_file": "dr-barbara-sturm.svg"
+    },
     "dries-van-noten": {
       "status": "verified",
       "source_page": "https://www.driesvannoten.com/",
@@ -424,6 +447,13 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:Fmlogo.svg",
       "source_file": "Fmlogo.svg",
       "local_file": "franck-muller.svg"
+    },
+    "frederic-malle": {
+      "status": "verified",
+      "source_page": "https://vectorseek.com/vector_logo/editions-de-parfums-frederic-malle-logo-vector/",
+      "vector_source": "https://vectorseek.com/wp-content/uploads/2023/09/Editions-de-Parfums-Frederic-Malle-Logo-Vector.zip",
+      "source_file": "Editions de Parfums Frédéric Malle Logo Vector.svg",
+      "local_file": "frederic-malle.svg"
     },
     "frette": {
       "status": "verified",

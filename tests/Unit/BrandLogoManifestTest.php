@@ -45,6 +45,14 @@ class BrandLogoManifestTest extends TestCase
             $this->assertStringNotContainsStringIgnoringCase('javascript:', $svg, $slug);
             $this->assertStringNotContainsStringIgnoringCase('<image', $svg, $slug.' must be genuine vector artwork, not a raster image wrapper.');
             $this->assertStringNotContainsStringIgnoringCase('data:image/', $svg, $slug.' must not embed raster image data.');
+
+            libxml_use_internal_errors(true);
+            libxml_clear_errors();
+            $this->assertNotFalse(
+                simplexml_load_string($svg),
+                $slug.' must be standards-valid SVG XML.',
+            );
+            libxml_clear_errors();
         }
 
         $files = glob(__DIR__.'/../../public/brand-logos/*.svg');
