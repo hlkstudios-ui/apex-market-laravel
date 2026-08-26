@@ -30,7 +30,10 @@ class BrandLogoManifestTest extends TestCase
             }
 
             $this->assertFileExists($path, $slug);
-            $this->assertStringContainsString('<svg', file_get_contents($path), $slug);
+            $svg = file_get_contents($path);
+            $this->assertStringContainsString('<svg', $svg, $slug);
+            $this->assertStringNotContainsStringIgnoringCase('<script', $svg, $slug);
+            $this->assertStringNotContainsStringIgnoringCase('javascript:', $svg, $slug);
         }
 
         $files = glob(__DIR__.'/../../public/brand-logos/*.svg');

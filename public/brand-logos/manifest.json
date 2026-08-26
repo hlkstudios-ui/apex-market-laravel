@@ -197,11 +197,32 @@
       "source_file": "Gucci logo.svg",
       "local_file": "gucci.svg"
     },
+    "guerlain": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Guerlain_-_logo_(France,_2022-).svg",
+      "vector_source": "https://i.logos-download.com/609/118-02bb88affb12c4f84fbd7d4f8e77975c.svg/Guerlain_Logo_2022.svg?dl=",
+      "source_file": "Guerlain Logo 2022.svg",
+      "local_file": "guerlain.svg"
+    },
     "hermes": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Hermes_wordmark.svg",
       "source_file": "Hermes wordmark.svg",
       "local_file": "hermes.svg"
+    },
+    "hublot": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hublot-logo.svg",
+      "vector_source": "https://img.logodad.com/upload/S/n2m/hublot.svg?mkdown=f",
+      "source_file": "hublot.svg",
+      "local_file": "hublot.svg"
+    },
+    "iwc-schaffhausen": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:International_Watch_Company_logo.svg",
+      "vector_source": "https://cdn.worldvectorlogo.com/logos/iwc-schaffhausen.svg",
+      "source_file": "iwc-schaffhausen.svg",
+      "local_file": "iwc-schaffhausen.svg"
     },
     "lamborghini": {
       "status": "verified",
@@ -236,24 +257,6 @@
       "status": "source_verified_asset_pending",
       "source_page": "https://commons.wikimedia.org/wiki/File:Grand_Seiko_Logo.svg",
       "source_file": "Grand Seiko Logo.svg",
-      "reason": "Verified original SVG payload is awaiting a clean download."
-    },
-    "guerlain": {
-      "status": "source_verified_asset_pending",
-      "source_page": "https://commons.wikimedia.org/wiki/File:Guerlain_-_logo_(France,_2022-).svg",
-      "source_file": "Guerlain - logo (France, 2022-).svg",
-      "reason": "Verified current 2022 wordmark payload is awaiting a clean download."
-    },
-    "hublot": {
-      "status": "source_verified_asset_pending",
-      "source_page": "https://commons.wikimedia.org/wiki/File:Hublot-logo.svg",
-      "source_file": "Hublot-logo.svg",
-      "reason": "Verified Hublot SA vector payload is awaiting a clean download."
-    },
-    "iwc-schaffhausen": {
-      "status": "source_verified_asset_pending",
-      "source_page": "https://commons.wikimedia.org/wiki/File:International_Watch_Company_logo.svg",
-      "source_file": "International Watch Company logo.svg",
       "reason": "Verified original SVG payload is awaiting a clean download."
     }
   }
