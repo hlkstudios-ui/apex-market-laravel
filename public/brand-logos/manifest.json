@@ -301,11 +301,30 @@
       "source_file": "patek-philippe.svg",
       "local_file": "patek-philippe.svg"
     },
+    "piaget": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Piaget_logo.svg",
+      "source_file": "Piaget logo.svg",
+      "local_file": "piaget.svg"
+    },
+    "poltrona-frau": {
+      "status": "verified",
+      "source_page": "https://worldvectorlogo.com/logo/poltrona-frau-logo",
+      "vector_source": "https://cdn.worldvectorlogo.com/logos/poltrona-frau-logo.svg",
+      "source_file": "poltrona-frau-logo.svg",
+      "local_file": "poltrona-frau.svg"
+    },
     "pomellato": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Pomellato_logo.svg",
       "source_file": "Pomellato logo.svg",
       "local_file": "pomellato.svg"
+    },
+    "porsche-design": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Porsche_Design_brand_logo.svg",
+      "source_file": "Porsche Design brand logo.svg",
+      "local_file": "porsche-design.svg"
     },
     "rimowa": {
       "status": "verified",
