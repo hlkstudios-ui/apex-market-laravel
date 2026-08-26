@@ -326,6 +326,13 @@
       "source_file": "Porsche Design brand logo.svg",
       "local_file": "porsche-design.svg"
     },
+    "repossi": {
+      "status": "verified",
+      "source_page": "https://www.repossi.com/",
+      "vector_source": "https://www.repossi.com/",
+      "source_file": "inline new-repossi-logo SVG",
+      "local_file": "repossi.svg"
+    },
     "rimowa": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:RIMOWA_Logo.svg",
@@ -344,6 +351,25 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:Rolex_wordmark_logo.svg",
       "source_file": "Rolex wordmark logo.svg",
       "local_file": "rolex.svg"
+    },
+    "santoni": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Santoni_logo_(1).svg",
+      "source_file": "Santoni logo (1).svg",
+      "local_file": "santoni.svg"
+    },
+    "sisley-paris": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sisley_Paris_logo.svg",
+      "source_file": "Sisley Paris logo.svg",
+      "local_file": "sisley-paris.svg"
+    },
+    "smythson": {
+      "status": "verified",
+      "source_page": "https://www.smythson.com/",
+      "vector_source": "https://www.smythson.com/on/demandware.static/Sites-smythson-UK-Site/-/default/dw08fc817b/images/smythson_logo.svg",
+      "source_file": "smythson_logo.svg",
+      "local_file": "smythson.svg"
     }
   },
   "pending": {
