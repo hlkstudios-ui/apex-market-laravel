@@ -556,12 +556,26 @@
       "source_file": "lamborghini.svg",
       "local_file": "lamborghini.svg"
     },
+    "la-mer": {
+      "status": "verified",
+      "source_page": "https://cdnlogo.com/logo/la-mer_43746.html",
+      "vector_source": "https://static.cdnlogo.com/logos/l/80/la-mer.svg",
+      "source_file": "la-mer.svg",
+      "local_file": "la-mer.svg"
+    },
     "lalique": {
       "status": "verified",
       "source_page": "https://cdnlogo.com/logo/lalique_6575.html",
       "vector_source": "https://static.cdnlogo.com/logos/l/59/lalique.svg",
       "source_file": "lalique.svg",
       "local_file": "lalique.svg"
+    },
+    "le-labo": {
+      "status": "verified",
+      "source_page": "https://cdnlogo.com/logo/le-labo_135081.html",
+      "vector_source": "https://static.cdnlogo.com/logos/l/6/le-labo.svg",
+      "source_file": "le-labo.svg",
+      "local_file": "le-labo.svg"
     },
     "loewe": {
       "status": "verified",
