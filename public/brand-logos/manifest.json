@@ -141,6 +141,18 @@
       "source_file": "dior.svg",
       "local_file": "christian-dior.svg"
     },
+    "courreges": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Logo_courr%C3%A8ges.svg",
+      "source_file": "Logo courrèges.svg",
+      "local_file": "courreges.svg"
+    },
+    "creed": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Creed_Fragrances_logo.svg",
+      "source_file": "Creed Fragrances logo.svg",
+      "local_file": "creed.svg"
+    },
     "ferrari": {
       "status": "verified",
       "source_page": "https://www.ferrari.com",
