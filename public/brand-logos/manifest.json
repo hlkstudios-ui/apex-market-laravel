@@ -181,6 +181,13 @@
       "source_file": "briggs-riley-logo.svg",
       "local_file": "briggs-riley.svg"
     },
+    "breguet": {
+      "status": "verified",
+      "source_page": "https://cdnlogo.com/logo/breguet_3412.html",
+      "vector_source": "https://static.cdnlogo.com/logos/b/52/breguet.svg",
+      "source_file": "breguet.svg",
+      "local_file": "breguet.svg"
+    },
     "breitling": {
       "status": "verified",
       "source_page": "https://cdnlogo.com/logo/breitling_34624.html",
@@ -269,6 +276,13 @@
       "source_file": "christian-louboutin.svg",
       "local_file": "christian-louboutin.svg"
     },
+    "christofle": {
+      "status": "verified",
+      "source_page": "https://cdnlogo.com/logo/christofle_18528.html",
+      "vector_source": "https://static.cdnlogo.com/logos/c/67/christofle.svg",
+      "source_file": "christofle.svg",
+      "local_file": "christofle.svg"
+    },
     "christian-dior": {
       "status": "verified",
       "source_page": "https://www.dior.com",
@@ -355,6 +369,13 @@
       "vector_source": "https://fearofgod.com/cdn/shop/files/logo_0347a14f-261d-4c9e-9727-0d6ca7ab8c64.svg?v=1776099573",
       "source_file": "logo_0347a14f-261d-4c9e-9727-0d6ca7ab8c64.svg",
       "local_file": "fear-of-god.svg"
+    },
+    "fendi": {
+      "status": "verified",
+      "source_page": "https://cdnlogo.com/logo/fendi_58793.html",
+      "vector_source": "https://static.cdnlogo.com/logos/f/76/fendi.svg",
+      "source_file": "fendi.svg",
+      "local_file": "fendi.svg"
     },
     "ferrari": {
       "status": "verified",
