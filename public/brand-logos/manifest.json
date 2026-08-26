@@ -355,6 +355,13 @@
       "source_file": "Fmlogo.svg",
       "local_file": "franck-muller.svg"
     },
+    "frette": {
+      "status": "verified",
+      "source_page": "https://www.frette.com/",
+      "vector_source": "https://www.frette.com/",
+      "source_file": "inline nav--logo SVG symbol",
+      "local_file": "frette.svg"
+    },
     "gabriela-hearst": {
       "status": "verified",
       "source_page": "https://gabrielahearst.com/",
