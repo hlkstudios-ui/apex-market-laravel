@@ -104,11 +104,29 @@
       "source_file": "Cassina SpA logo.svg",
       "local_file": "cassina.svg"
     },
+    "celine": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Celine_logo.svg",
+      "source_file": "Celine logo.svg",
+      "local_file": "celine.svg"
+    },
     "chanel": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Chanel_logo.svg",
       "source_file": "Chanel logo.svg",
       "local_file": "chanel.svg"
+    },
+    "chaumet": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Chaumet_-_wordmark_(France).svg",
+      "source_file": "Chaumet - wordmark (France).svg",
+      "local_file": "chaumet.svg"
+    },
+    "chloe": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Chloe_2024_Logo.svg",
+      "source_file": "Chloe 2024 Logo.svg",
+      "local_file": "chloe.svg"
     },
     "chopard": {
       "status": "verified",
