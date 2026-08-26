@@ -53,6 +53,13 @@
       "source_file": "A.P.C. logo.svg",
       "local_file": "apc.svg"
     },
+    "aquazzura": {
+      "status": "verified",
+      "source_page": "https://www.aquazzura.com/",
+      "vector_source": "https://www.aquazzura.com/assets/logo.svg",
+      "source_file": "logo.svg",
+      "local_file": "aquazzura.svg"
+    },
     "artemide": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Artemide_logo.svg",
@@ -66,6 +73,13 @@
       "source_file": "official storefront inline SVG wordmark",
       "local_file": "assouline.svg"
     },
+    "augustinus-bader": {
+      "status": "verified",
+      "source_page": "https://augustinusbader.com/",
+      "vector_source": "https://static.augustinusbader.com/version1787069498/frontend/AugustinusBader/hyva2025/en_GB/images/logo.svg",
+      "source_file": "logo.svg",
+      "local_file": "augustinus-bader.svg"
+    },
     "aston-martin": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Aston_Martin_wordmark.svg",
@@ -77,6 +91,13 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:Logo_Audemars_Piguet.svg",
       "source_file": "Logo Audemars Piguet.svg",
       "local_file": "audemars-piguet.svg"
+    },
+    "baccarat": {
+      "status": "verified",
+      "source_page": "https://www.baccarat.com/",
+      "vector_source": "https://www.baccarat.com/on/demandware.static/-/Sites-INT-Library/default/dwa62110c6/images/Logo.svg",
+      "source_file": "Logo.svg",
+      "local_file": "baccarat.svg"
     },
     "baker-furniture": {
       "status": "verified",
