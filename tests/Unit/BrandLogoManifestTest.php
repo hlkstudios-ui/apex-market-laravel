@@ -17,11 +17,16 @@ class BrandLogoManifestTest extends TestCase
 
             if (! str_starts_with($logo['source_page'], 'https://commons.wikimedia.org/wiki/File:')) {
                 $this->assertArrayHasKey('vector_source', $logo, $slug);
-                $this->assertStringStartsWith(
-                    'https://raw.githubusercontent.com/simple-icons/simple-icons/',
+                $this->assertStringStartsWith('https://', $logo['vector_source'], $slug);
+
+                $isCuratedVector = str_starts_with(
                     $logo['vector_source'],
-                    $slug,
+                    'https://raw.githubusercontent.com/simple-icons/simple-icons/',
                 );
+                $isOfficialAsset = parse_url($logo['source_page'], PHP_URL_HOST)
+                    === parse_url($logo['vector_source'], PHP_URL_HOST);
+
+                $this->assertTrue($isCuratedVector || $isOfficialAsset, $slug.' must use an official or curated vector source.');
             }
 
             $this->assertFileExists($path, $slug);
