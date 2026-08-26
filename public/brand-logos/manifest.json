@@ -313,6 +313,20 @@
       "source_file": "Dolce & Gabbana - logo (Italy, 1985-).svg",
       "local_file": "dolce-gabbana.svg"
     },
+    "dries-van-noten": {
+      "status": "verified",
+      "source_page": "https://www.driesvannoten.com/",
+      "vector_source": "https://www.driesvannoten.com/cdn/shop/t/1127/assets/logo.svg?v=122705962559527302121782226771",
+      "source_file": "logo.svg",
+      "local_file": "dries-van-noten.svg"
+    },
+    "fear-of-god": {
+      "status": "verified",
+      "source_page": "https://fearofgod.com/",
+      "vector_source": "https://fearofgod.com/cdn/shop/files/logo_0347a14f-261d-4c9e-9727-0d6ca7ab8c64.svg?v=1776099573",
+      "source_file": "logo_0347a14f-261d-4c9e-9727-0d6ca7ab8c64.svg",
+      "local_file": "fear-of-god.svg"
+    },
     "ferrari": {
       "status": "verified",
       "source_page": "https://www.ferrari.com",
@@ -394,6 +408,13 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:Isabel_Marant_2023_logo.svg",
       "source_file": "Isabel Marant 2023 logo.svg",
       "local_file": "isabel-marant.svg"
+    },
+    "jacquemus": {
+      "status": "verified",
+      "source_page": "https://www.jacquemus.com/",
+      "vector_source": "https://www.jacquemus.com/",
+      "source_file": "official storefront inline SVG wordmark",
+      "local_file": "jacquemus.svg"
     },
     "jaeger-lecoultre": {
       "status": "verified",
