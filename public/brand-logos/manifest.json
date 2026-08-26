@@ -340,6 +340,20 @@
       "source_file": "Fmlogo.svg",
       "local_file": "franck-muller.svg"
     },
+    "georg-jensen": {
+      "status": "verified",
+      "source_page": "https://www.georgjensen.com/",
+      "vector_source": "https://www.georgjensen.com/on/demandware.static/Sites-GeorgJensen_LandingPage-Site/-/default/dw92e8c37e/assets/images/logo.svg",
+      "source_file": "logo.svg",
+      "local_file": "georg-jensen.svg"
+    },
+    "gianvito-rossi": {
+      "status": "verified",
+      "source_page": "https://www.gianvitorossi.com/",
+      "vector_source": "https://www.gianvitorossi.com/",
+      "source_file": "official storefront inline SVG wordmark",
+      "local_file": "gianvito-rossi.svg"
+    },
     "girard-perregaux": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Girard-Perregaux_logo.svg",
@@ -357,6 +371,13 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:Givenchy_-_wordmark_(France,_2003).svg",
       "source_file": "Givenchy - wordmark (France, 2003).svg",
       "local_file": "givenchy.svg"
+    },
+    "globe-trotter": {
+      "status": "verified",
+      "source_page": "https://www.globe-trotter.com/",
+      "vector_source": "https://www.globe-trotter.com/cdn/shop/files/Logo_SVG.svg?v=1773208394&width=500",
+      "source_file": "Logo_SVG.svg",
+      "local_file": "globe-trotter.svg"
     },
     "goyard": {
       "status": "verified",
