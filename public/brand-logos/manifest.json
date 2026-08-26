@@ -191,6 +191,12 @@
       "source_file": "Givenchy - wordmark (France, 2003).svg",
       "local_file": "givenchy.svg"
     },
+    "grand-seiko": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Grand_Seiko_Logo.svg",
+      "source_file": "Grand Seiko Logo.svg",
+      "local_file": "grand-seiko.svg"
+    },
     "gucci": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Gucci_logo.svg",
@@ -371,6 +377,13 @@
       "source_file": "smythson_logo.svg",
       "local_file": "smythson.svg"
     },
+    "tasaki": {
+      "status": "verified",
+      "source_page": "https://www.tasaki.co.jp/",
+      "vector_source": "https://www.tasaki.co.jp/pub/static/version1787203459/frontend/Tasaki/jpsite/ja_JP/images/logo.svg",
+      "source_file": "logo.svg",
+      "local_file": "tasaki.svg"
+    },
     "the-row": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:The_Row_logo.svg",
@@ -388,6 +401,20 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:Tods.svg",
       "source_file": "Tods.svg",
       "local_file": "tods.svg"
+    },
+    "tom-ford-beauty": {
+      "status": "verified",
+      "source_page": "https://www.tomfordbeauty.com/",
+      "vector_source": "https://www.tomfordbeauty.com/cdn/shop/files/TF_Logo.svg?v=1756924083&width=1200",
+      "source_file": "TF_Logo.svg",
+      "local_file": "tom-ford-beauty.svg"
+    },
+    "tumi": {
+      "status": "verified",
+      "source_page": "https://cdnlogo.com/logo/tumi_61657.html",
+      "vector_source": "https://static.cdnlogo.com/logos/t/40/tumi.svg",
+      "source_file": "tumi.svg",
+      "local_file": "tumi.svg"
     },
     "valextra": {
       "status": "verified",
@@ -410,12 +437,5 @@
       "local_file": "zero-halliburton.svg"
     }
   },
-  "pending": {
-    "grand-seiko": {
-      "status": "source_verified_asset_pending",
-      "source_page": "https://commons.wikimedia.org/wiki/File:Grand_Seiko_Logo.svg",
-      "source_file": "Grand Seiko Logo.svg",
-      "reason": "Verified original SVG payload is awaiting a clean download."
-    }
-  }
+  "pending": {}
 }
