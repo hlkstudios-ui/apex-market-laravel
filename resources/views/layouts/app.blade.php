@@ -14,7 +14,7 @@
     <button class="language nav-tile" type="button" aria-label="Language"><span>🇨🇦</span> <b>EN</b><i>▾</i></button>
     <a class="nav-account nav-tile" href="{{route('checkout.create')}}"><small>Hello, sign in</small><b>Account &amp; Lists <i>▾</i></b></a>
     <a class="nav-orders nav-tile" href="{{route('cart.index')}}"><small>Returns</small><b>&amp; Orders</b></a>
-    <a class="cart-link nav-tile" href="{{route('cart.index')}}"><span class="cart-icon"><svg viewBox="0 0 32 27"><path d="M2 2h4l3.2 15.5h15.6L29 7H8M11 24h.1M24 24h.1"/></svg><b>{{array_sum(session('cart',[]))}}</b></span><strong>Cart</strong></a>
+    <a class="cart-link nav-tile" href="{{route('cart.index')}}"><span class="cart-icon"><span class="cart-count">{{array_sum(session('cart',[]))}}</span><svg viewBox="0 0 32 27" aria-hidden="true"><path d="M2 2h4l3.2 15.5h15.6L29 7H8M11 24h.1M24 24h.1"/></svg></span><strong>Cart</strong></a>
 </div>
 <nav class="nav-secondary" aria-label="Store departments">
     <button class="all-menu" type="button"><span>☰</span> All</button>
