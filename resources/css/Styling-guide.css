@@ -207,6 +207,35 @@ svg { display: block; flex: 0 0 auto; }
 .ui-dropdown__option:disabled, .ui-dropdown__option[aria-disabled='true'] { color: var(--color-muted); cursor: not-allowed; opacity: .5; }
 .ui-dropdown__group-label { padding: .8rem .875rem .4rem; color: var(--color-gold); font-size: .5625rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
 
+/* Filter bars contain nested dropdown buttons. Never target `.filters button` or
+   `.ui-filter-bar button`: broad descendant selectors corrupt triggers/options.
+   Style only the direct, named submit action. */
+.ui-filter-bar {
+    --control-height: 3.375rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(15rem, 2fr) minmax(11rem, 1fr) minmax(11rem, 1fr) auto;
+    align-items: start;
+    gap: .75rem;
+}
+
+.ui-filter-bar > :where(.ui-input, .ui-dropdown, .filter-submit) { min-width: 0; }
+.ui-filter-bar > .ui-input, .ui-filter-bar .ui-dropdown__trigger, .ui-filter-bar > .filter-submit { height: var(--control-height); }
+.ui-filter-bar > .filter-submit { margin: 0; padding-inline: 1.5rem; }
+.ui-filter-bar .ui-dropdown__panel { top: calc(100% + .5rem); padding: .5rem; }
+.ui-filter-bar .ui-dropdown__option + .ui-dropdown__option { border-top: 1px solid var(--color-rule); }
+.ui-filter-bar .ui-dropdown__option[aria-selected='true'] + .ui-dropdown__option { border-top-color: transparent; }
+
+@media (max-width: 56rem) {
+    .ui-filter-bar { grid-template-columns: 1fr 1fr; }
+    .ui-filter-bar > .ui-input { grid-column: 1 / -1; }
+}
+
+@media (max-width: 35rem) {
+    .ui-filter-bar { grid-template-columns: 1fr; }
+    .ui-filter-bar > .ui-input { grid-column: auto; }
+}
+
 @media (max-width: 35rem) {
     .ui-dropdown__panel { max-height: min(18rem, 45vh); }
     .ui-dropdown__option { min-height: 3rem; }
