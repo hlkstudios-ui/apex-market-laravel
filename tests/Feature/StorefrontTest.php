@@ -40,6 +40,8 @@ class StorefrontTest extends TestCase
         $this->get(route('brands.index'))
             ->assertOk()
             ->assertDontSee('brand-index', escape: false)
+            ->assertSee('brand-niche', escape: false)
+            ->assertSee('Discover Alaïa — Fashion')
             ->assertSee('data-brand-logo', escape: false)
             ->assertSee('brand-logo__image', escape: false);
     }

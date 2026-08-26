@@ -35,17 +35,16 @@
 /* Reusable designer card and optically normalized logo stage */
 .brand-groups section{border-bottom:0}
 .brand-groups .brand-logo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.125rem;border:0}
-.brand-groups .brand-logo-card{position:relative;min-height:var(--brand-card-height);height:var(--brand-card-height);padding:0;display:grid;grid-template-rows:var(--brand-logo-stage-height) 1fr;border:0;background:var(--color-ivory);box-shadow:none;overflow:hidden;transition:background var(--transition),color var(--transition),transform var(--transition)}
+.brand-groups .brand-logo-card{position:relative;min-height:var(--brand-card-height);height:var(--brand-card-height);padding:0;display:block;border:0;background:var(--color-ivory);box-shadow:none;overflow:hidden;transition:background var(--transition),color var(--transition),transform var(--transition)}
 .brand-groups .brand-logo-card:hover{border:0;background:var(--color-ink);color:var(--color-white);box-shadow:none;transform:translateY(-.1875rem)}
-.brand-logo{--brand-logo-scale:1;--brand-logo-shift-x:0%;--brand-logo-shift-y:0%;position:relative;width:100%;height:var(--brand-logo-stage-height);padding:2rem 1.75rem .875rem;display:grid;place-items:center;overflow:hidden}
+.brand-logo{--brand-logo-scale:1;--brand-logo-shift-x:0%;--brand-logo-shift-y:0%;position:relative;width:100%;height:var(--brand-logo-stage-height);padding:1.5rem 1.375rem 1.75rem;display:grid;place-items:center;overflow:hidden}
 .brand-logo__image{display:block;width:100%;height:100%;max-width:none;max-height:none;object-fit:contain;filter:grayscale(1);mix-blend-mode:multiply;opacity:0;transform:translate(var(--brand-logo-shift-x),var(--brand-logo-shift-y)) scale(var(--brand-logo-scale));transform-origin:center;transition:opacity var(--transition),transform var(--transition),filter var(--transition)}
 .brand-logo.is-fitted .brand-logo__image{opacity:1}
 .brand-logo-card:hover .brand-logo__image{filter:grayscale(1) invert(1);mix-blend-mode:screen;transform:translate(var(--brand-logo-shift-x),var(--brand-logo-shift-y)) scale(calc(var(--brand-logo-scale) * 1.02))}
-.brand-meta{height:3.5rem;padding:0 1.25rem 1rem!important;display:flex!important;flex-direction:row!important;align-items:flex-end;justify-content:space-between;border:0}
-.brand-logo-card .brand-meta small{max-width:65%;margin:0;color:var(--color-muted);font-size:.5rem;line-height:1.35;letter-spacing:.13em;text-align:left;text-transform:uppercase}
+.brand-meta{position:absolute;right:1.125rem;bottom:.875rem;height:auto;padding:0!important;display:block!important;border:0;pointer-events:none}
+.brand-logo-card .brand-meta .brand-niche{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 .brand-logo-card .brand-meta>span{font-size:.5625rem;letter-spacing:.1em;text-transform:uppercase;opacity:0;transform:translateX(-.5rem);transition:opacity var(--transition),transform var(--transition)}
 .brand-logo-card .brand-meta i{margin-left:.3125rem;color:var(--color-gold);font-size:.8125rem;font-style:normal}
-.brand-logo-card:hover .brand-meta small{color:#aaa}
 .brand-logo-card:hover .brand-meta>span{opacity:1;transform:translateX(0)}
 .brand-logo-card .brand-arrow{display:none}
 @media(max-width:1100px){.brand-groups .brand-logo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}

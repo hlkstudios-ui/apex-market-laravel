@@ -32,11 +32,11 @@
     --shadow-soft: 0 14px 40px rgb(16 16 15 / 8%);
     --transition: 160ms ease;
     --brand-card-height: 13.75rem;
-    --brand-logo-stage-height: 10.25rem;
-    --brand-logo-optical-width: 76%;
-    --brand-logo-optical-height: 38%;
+    --brand-logo-stage-height: 13.75rem;
+    --brand-logo-optical-width: 86%;
+    --brand-logo-optical-height: 52%;
     --brand-logo-scale-min: .72;
-    --brand-logo-scale-max: 1.9;
+    --brand-logo-scale-max: 2.15;
 }
 
 body { background: var(--color-paper); color: var(--color-ink); font-family: var(--font-body); }
