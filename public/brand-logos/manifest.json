@@ -59,6 +59,13 @@
       "source_file": "Artemide logo.svg",
       "local_file": "artemide.svg"
     },
+    "assouline": {
+      "status": "verified",
+      "source_page": "https://www.assouline.com/",
+      "vector_source": "https://www.assouline.com/",
+      "source_file": "official storefront inline SVG wordmark",
+      "local_file": "assouline.svg"
+    },
     "aston-martin": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Aston_Martin_wordmark.svg",
