@@ -266,6 +266,41 @@
       "source_file": "mclaren.svg",
       "local_file": "mclaren.svg"
     },
+    "moncler": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Logo_Moncler_Group.svg",
+      "vector_source": "https://cdn.worldvectorlogo.com/logos/moncler.svg",
+      "source_file": "moncler.svg",
+      "local_file": "moncler.svg"
+    },
+    "montblanc": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Montblanc_logo.svg",
+      "vector_source": "https://cdn.worldvectorlogo.com/logos/montblanc.svg",
+      "source_file": "montblanc.svg",
+      "local_file": "montblanc.svg"
+    },
+    "omega": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Omega_Logo.svg",
+      "vector_source": "https://cdn.worldvectorlogo.com/logos/omega.svg",
+      "source_file": "omega.svg",
+      "local_file": "omega.svg"
+    },
+    "panerai": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Panerai_logo.svg",
+      "vector_source": "https://cdn.worldvectorlogo.com/logos/panerai-1.svg",
+      "source_file": "panerai-1.svg",
+      "local_file": "panerai.svg"
+    },
+    "patek-philippe": {
+      "status": "verified",
+      "source_page": "https://worldvectorlogo.com/logo/patek-philippe",
+      "vector_source": "https://cdn.worldvectorlogo.com/logos/patek-philippe.svg",
+      "source_file": "patek-philippe.svg",
+      "local_file": "patek-philippe.svg"
+    },
     "rolls-royce": {
       "status": "verified",
       "source_page": "https://www.rolls-roycemotorcars.com",
