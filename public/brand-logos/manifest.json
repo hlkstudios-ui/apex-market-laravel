@@ -254,6 +254,20 @@
       "source_file": "dior.svg",
       "local_file": "christian-dior.svg"
     },
+    "churchs": {
+      "status": "verified",
+      "source_page": "https://www.church-footwear.com/",
+      "vector_source": "https://www.church-footwear.com/",
+      "source_file": "official storefront inline SVG wordmark",
+      "local_file": "churchs.svg"
+    },
+    "cle-de-peau-beaute": {
+      "status": "verified",
+      "source_page": "https://www.cledepeaubeaute.com/",
+      "vector_source": "https://www.cledepeaubeaute.com/on/demandware.static/Sites-CPB-Site/-/default/dw96fa8c8c/images/svgicons/cpb-logo.svg",
+      "source_file": "cpb-logo.svg",
+      "local_file": "cle-de-peau-beaute.svg"
+    },
     "courreges": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Logo_courr%C3%A8ges.svg",
@@ -278,6 +292,13 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:De_Beers_Logo.svg",
       "source_file": "De Beers Logo.svg",
       "local_file": "de-beers.svg"
+    },
+    "delvaux": {
+      "status": "verified",
+      "source_page": "https://eu.delvaux.com/",
+      "vector_source": "https://eu.delvaux.com/",
+      "source_file": "official storefront inline SVG wordmark",
+      "local_file": "delvaux.svg"
     },
     "diptyque": {
       "status": "verified",
