@@ -370,6 +370,44 @@
       "vector_source": "https://www.smythson.com/on/demandware.static/Sites-smythson-UK-Site/-/default/dw08fc817b/images/smythson_logo.svg",
       "source_file": "smythson_logo.svg",
       "local_file": "smythson.svg"
+    },
+    "the-row": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:The_Row_logo.svg",
+      "source_file": "The Row logo.svg",
+      "local_file": "the-row.svg"
+    },
+    "tiffany-co": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tiffany_%26_Co._2024_logo.svg",
+      "source_file": "Tiffany & Co. 2024 logo.svg",
+      "local_file": "tiffany-co.svg"
+    },
+    "tods": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tods.svg",
+      "source_file": "Tods.svg",
+      "local_file": "tods.svg"
+    },
+    "valextra": {
+      "status": "verified",
+      "source_page": "https://www.valextra.com/en-us/",
+      "vector_source": "https://www.valextra.com/on/demandware.static/Sites-ValextraGlobal-Site/-/default/dw558c2ba8/images/logo.svg",
+      "source_file": "logo.svg",
+      "local_file": "valextra.svg"
+    },
+    "van-cleef-arpels": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Van_Cleef_Arpels_logo.svg",
+      "source_file": "Van Cleef Arpels logo.svg",
+      "local_file": "van-cleef-arpels.svg"
+    },
+    "zero-halliburton": {
+      "status": "verified",
+      "source_page": "https://zerohalliburton.com/",
+      "vector_source": "https://zerohalliburton.com/cdn/shop/files/ZH-Logo_black-01_95956a61-6226-4c79-84cf-fd908810a2c8.svg?v=1702202473&width=1200",
+      "source_file": "ZH-Logo_black-01.svg",
+      "local_file": "zero-halliburton.svg"
     }
   },
   "pending": {
