@@ -645,6 +645,13 @@
       "source_file": "Maison Margiela logo.svg",
       "local_file": "maison-margiela.svg"
     },
+    "maison-francis-kurkdjian": {
+      "status": "verified",
+      "source_page": "https://brandlogos.net/maison-francis-kurkdjian-logo-115476.html",
+      "vector_source": "https://files.brandlogos.net/svg/5u09aDDnPy/Maison_Francis_Kurkdjian-logo-brandlogos-379577.svg",
+      "source_file": "Maison Francis Kurkdjian-logo-brandlogos-379577.svg",
+      "local_file": "maison-francis-kurkdjian.svg"
+    },
     "manolo-blahnik": {
       "status": "verified",
       "source_page": "https://www.manoloblahnik.com/",
@@ -765,6 +772,13 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:RIMOWA_Logo.svg",
       "source_file": "RIMOWA Logo.svg",
       "local_file": "rimowa.svg"
+    },
+    "roger-vivier": {
+      "status": "verified",
+      "source_page": "https://logovectordl.com/roger-vivier-logo-vector-svg/",
+      "vector_source": "https://logovectordl.com/f/r/roger-vivier-logo-vector.zip",
+      "source_file": "roger-vivier-logo-vector.svg",
+      "local_file": "roger-vivier.svg"
     },
     "rolls-royce": {
       "status": "verified",
