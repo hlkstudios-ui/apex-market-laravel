@@ -32,14 +32,14 @@ class StorefrontTest extends TestCase
         $this->assertEmpty(session('cart', []));
     }
 
-    public function test_designer_directory_uses_reusable_logos_and_continuous_indices(): void
+    public function test_designer_directory_uses_reusable_logos_without_sequence_numbers(): void
     {
         Brand::create(['name' => 'Alaïa', 'slug' => 'alaia', 'niche' => 'Fashion']);
         Brand::create(['name' => 'Berluti', 'slug' => 'berluti', 'niche' => 'Fashion']);
 
         $this->get(route('brands.index'))
             ->assertOk()
-            ->assertSeeInOrder(['001', '002'])
+            ->assertDontSee('brand-index', escape: false)
             ->assertSee('data-brand-logo', escape: false)
             ->assertSee('brand-logo__image', escape: false);
     }
