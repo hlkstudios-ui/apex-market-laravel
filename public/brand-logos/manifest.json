@@ -492,13 +492,6 @@
       "source_file": "lamborghini.svg",
       "local_file": "lamborghini.svg"
     },
-    "lalique": {
-      "status": "verified",
-      "source_page": "https://us.lalique.com/",
-      "vector_source": "https://us.lalique.com/cdn/shop/files/LOGO_LALIQUE_BLACK_2285233d-1ba1-40a3-b2ab-0861ef8fca6a.svg?v=1755625404&width=500",
-      "source_file": "LOGO_LALIQUE_BLACK.svg",
-      "local_file": "lalique.svg"
-    },
     "loewe": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Loewe_logo.svg",
