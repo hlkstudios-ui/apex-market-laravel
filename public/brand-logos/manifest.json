@@ -148,6 +148,13 @@
       "source_file": "Blancpain logo.svg",
       "local_file": "blancpain.svg"
     },
+    "bode": {
+      "status": "verified",
+      "source_page": "https://bode.com/",
+      "vector_source": "https://bode.com/",
+      "source_file": "official storefront inline SVG wordmark",
+      "local_file": "bode.svg"
+    },
     "bottega-veneta": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Logo_Bottega_Veneta.svg",
