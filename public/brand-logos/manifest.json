@@ -98,6 +98,13 @@
       "source_file": "Logo of Boucheron.svg",
       "local_file": "boucheron.svg"
     },
+    "buccellati": {
+      "status": "verified",
+      "source_page": "https://www.buccellati.com/en_us/",
+      "vector_source": "https://www.buccellati.com/static/version1786004751/frontend/Jakala/Buccellati/en_US/images/logo.svg",
+      "source_file": "logo.svg",
+      "local_file": "buccellati.svg"
+    },
     "bulgari": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Bulgari_logo.svg",
