@@ -179,6 +179,18 @@
       "source_file": "ferrari.svg",
       "local_file": "ferrari.svg"
     },
+    "giorgio-armani": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Giorgio_Armani.svg",
+      "source_file": "Giorgio Armani.svg",
+      "local_file": "giorgio-armani.svg"
+    },
+    "givenchy": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Givenchy_-_wordmark_(France,_2003).svg",
+      "source_file": "Givenchy - wordmark (France, 2003).svg",
+      "local_file": "givenchy.svg"
+    },
     "gucci": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Gucci_logo.svg",
