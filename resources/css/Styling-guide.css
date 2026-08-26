@@ -14,8 +14,14 @@
 
 :root {
     --control-hit-area: 2.5rem;
+    --control-height: 2.875rem;
+    --control-padding-inline: 1rem;
     --icon-size-sm: 1.25rem;
     --count-size: .875rem;
+    --component-border: 1px solid var(--color-rule);
+    --component-focus-ring: 0 0 0 3px rgb(170 133 80 / 16%);
+    --card-padding: clamp(1.25rem, 2vw, 2rem);
+    --card-image-ratio: 4 / 5;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -74,6 +80,123 @@ svg { display: block; flex: 0 0 auto; }
     letter-spacing: 0;
     line-height: 1;
     transform: translate(45%, -45%);
+}
+
+/* Form fields: label, help, error, input, textarea, and select. */
+.ui-field { display: grid; gap: var(--space-1); }
+
+.ui-label {
+    color: var(--color-ink);
+    font-size: .625rem;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.ui-help, .ui-error { margin: 0; font-size: var(--text-xs); line-height: 1.5; }
+.ui-help { color: var(--color-muted); }
+.ui-error { color: var(--color-danger); }
+
+.ui-input, .ui-textarea, .ui-select > select {
+    width: 100%;
+    min-height: var(--control-height);
+    padding: .75rem var(--control-padding-inline);
+    border: var(--component-border);
+    border-radius: 0;
+    outline: 0;
+    background: var(--color-white);
+    color: var(--color-ink);
+    font-size: var(--text-sm);
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.ui-input::placeholder, .ui-textarea::placeholder { color: var(--color-muted); opacity: .72; }
+.ui-textarea { min-height: 7.5rem; resize: vertical; line-height: 1.6; }
+.ui-input:hover, .ui-textarea:hover, .ui-select > select:hover { border-color: var(--color-muted); }
+.ui-input:focus, .ui-textarea:focus, .ui-select > select:focus { border-color: var(--color-gold); box-shadow: var(--component-focus-ring); }
+.ui-input[aria-invalid='true'], .ui-textarea[aria-invalid='true'], .ui-select > select[aria-invalid='true'] { border-color: var(--color-danger); }
+:where(.ui-input, .ui-textarea, .ui-select > select):disabled { background: var(--color-ivory); color: var(--color-muted); cursor: not-allowed; opacity: .72; }
+
+/* Dropdown: always wrap the native select in .ui-select. Keep native keyboard behavior. */
+.ui-select { position: relative; display: block; }
+.ui-select::after { content: ''; position: absolute; top: 50%; right: 1rem; width: .45rem; height: .45rem; border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; pointer-events: none; transform: translateY(-70%) rotate(45deg); }
+.ui-select > select { padding-right: 2.75rem; appearance: none; cursor: pointer; }
+.ui-select:has(select:disabled)::after { opacity: .45; }
+
+/* Radio and checkbox: label is the full target; input remains semantic and focusable. */
+.ui-choice-group { display: grid; gap: .75rem; }
+.ui-choice { min-height: var(--control-hit-area); display: inline-flex; align-items: center; gap: .75rem; color: var(--color-ink); font-size: var(--text-sm); cursor: pointer; }
+.ui-choice > input { position: relative; width: 1.125rem; height: 1.125rem; margin: 0; flex: 0 0 1.125rem; appearance: none; border: 1px solid var(--color-muted); background: var(--color-white); cursor: inherit; }
+.ui-choice > input[type='radio'] { border-radius: 50%; }
+.ui-choice > input[type='checkbox'] { border-radius: 0; }
+.ui-choice > input::after { content: ''; position: absolute; inset: 3px; background: var(--color-ink); opacity: 0; transform: scale(.45); transition: opacity var(--transition), transform var(--transition); }
+.ui-choice > input[type='radio']::after { border-radius: 50%; }
+.ui-choice > input[type='checkbox']::after { inset: 2px 4px 4px; border-right: 1.5px solid var(--color-white); border-bottom: 1.5px solid var(--color-white); background: transparent; transform: rotate(45deg) scale(.45); }
+.ui-choice > input:checked { border-color: var(--color-ink); background: var(--color-ink); }
+.ui-choice > input[type='radio']:checked { background: var(--color-white); }
+.ui-choice > input:checked::after { opacity: 1; transform: scale(1); }
+.ui-choice > input[type='checkbox']:checked::after { transform: rotate(45deg) scale(1); }
+.ui-choice > input:focus-visible { outline: 2px solid var(--color-gold); outline-offset: 3px; }
+.ui-choice:has(input:disabled) { color: var(--color-muted); cursor: not-allowed; opacity: .65; }
+
+/* Buttons: one base, three intentional levels. Do not create ad-hoc button colors. */
+.ui-button { min-height: 3.125rem; padding: .8rem 1.5rem; display: inline-flex; align-items: center; justify-content: center; gap: .625rem; border: 1px solid var(--color-ink); border-radius: 0; background: var(--color-ink); color: var(--color-white); font-size: .6875rem; font-weight: 600; letter-spacing: .12em; line-height: 1; text-align: center; text-transform: uppercase; cursor: pointer; }
+.ui-button:hover { background: var(--color-gold); border-color: var(--color-gold); color: var(--color-white); }
+.ui-button--secondary { background: transparent; color: var(--color-ink); }
+.ui-button--quiet { min-height: var(--control-hit-area); padding-inline: 0; border-color: transparent; background: transparent; color: var(--color-ink); text-decoration: underline; text-underline-offset: .3em; }
+.ui-button--quiet:hover { border-color: transparent; background: transparent; color: var(--color-gold); }
+.ui-button:disabled, .ui-button[aria-disabled='true'] { cursor: not-allowed; opacity: .45; pointer-events: none; }
+
+/* Cards: preserve one image ratio and one information hierarchy inside each grid. */
+.ui-card { position: relative; min-width: 0; overflow: hidden; border: var(--component-border); background: var(--color-white); color: var(--color-ink); }
+.ui-card--borderless { border: 0; background: var(--color-ivory); }
+.ui-card__media { width: 100%; aspect-ratio: var(--card-image-ratio); overflow: hidden; background: var(--color-ivory); }
+.ui-card__media > :where(img, video) { width: 100%; height: 100%; object-fit: cover; transition: transform 400ms ease; }
+.ui-card__body { padding: var(--card-padding); }
+.ui-card__eyebrow { margin: 0 0 .5rem; color: var(--color-gold); font-size: .625rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+.ui-card__title { margin: 0; font-family: var(--font-display); font-size: clamp(1.35rem, 2vw, 1.75rem); font-weight: 500; line-height: 1.1; }
+.ui-card__text { margin: .75rem 0 0; color: var(--color-muted); font-size: var(--text-sm); line-height: 1.65; }
+.ui-card:is(a):hover .ui-card__media > :where(img, video) { transform: scale(1.025); }
+
+/* Small status, feedback, and supporting information. */
+.ui-badge { width: fit-content; min-height: 1.5rem; padding: .3rem .55rem; display: inline-flex; align-items: center; border: 1px solid currentColor; border-radius: 0; color: var(--color-gold); font-size: .5625rem; font-weight: 600; letter-spacing: .12em; line-height: 1; text-transform: uppercase; }
+.ui-alert { padding: 1rem 1.25rem; border-left: 2px solid var(--color-gold); background: var(--color-ivory); color: var(--color-ink); font-size: var(--text-sm); line-height: 1.6; }
+.ui-alert--error { border-left-color: var(--color-danger); }
+.ui-empty { min-height: 16rem; padding: var(--space-5); display: grid; place-items: center; align-content: center; gap: .75rem; background: var(--color-ivory); text-align: center; }
+.ui-empty > :where(h2, h3, p) { margin: 0; }
+.ui-empty > p { max-width: 34rem; color: var(--color-muted); }
+
+/* Data, pagination, tabs, and disclosure patterns. */
+.ui-table-wrap { width: 100%; overflow-x: auto; border: var(--component-border); }
+.ui-table { width: 100%; border-collapse: collapse; background: var(--color-white); font-size: var(--text-sm); }
+.ui-table :where(th, td) { padding: .875rem 1rem; border-bottom: var(--component-border); text-align: left; vertical-align: middle; }
+.ui-table th { color: var(--color-muted); font-size: .5625rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; }
+.ui-table tr:last-child td { border-bottom: 0; }
+.ui-pagination { display: flex; align-items: center; justify-content: center; gap: .25rem; }
+.ui-pagination > :where(a, span) { min-width: var(--control-hit-area); min-height: var(--control-hit-area); display: grid; place-items: center; border: var(--component-border); background: var(--color-white); font-size: var(--text-xs); }
+.ui-pagination > [aria-current='page'] { border-color: var(--color-ink); background: var(--color-ink); color: var(--color-white); }
+.ui-tabs { display: flex; gap: 1.5rem; overflow-x: auto; border-bottom: var(--component-border); }
+.ui-tabs > :where(a, button) { min-height: var(--control-hit-area); padding: 0; flex: 0 0 auto; border: 0; border-bottom: 1px solid transparent; background: transparent; color: var(--color-muted); font-size: .625rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; cursor: pointer; }
+.ui-tabs > [aria-selected='true'], .ui-tabs > [aria-current='page'] { border-bottom-color: var(--color-gold); color: var(--color-ink); }
+.ui-disclosure { border-top: var(--component-border); }
+.ui-disclosure:last-child { border-bottom: var(--component-border); }
+.ui-disclosure > summary { min-height: 3.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; cursor: pointer; list-style: none; }
+.ui-disclosure > summary::-webkit-details-marker { display: none; }
+.ui-disclosure > summary::after { content: '+'; color: var(--color-gold); font-size: 1.2rem; font-weight: 400; }
+.ui-disclosure[open] > summary::after { content: '−'; }
+.ui-disclosure__body { padding: 0 0 1.5rem; color: var(--color-muted); font-size: var(--text-sm); line-height: 1.7; }
+
+/* Dialog: use the native <dialog> element and retain its built-in semantics. */
+.ui-dialog { width: min(calc(100% - 2rem), 38rem); max-height: calc(100dvh - 2rem); padding: 0; overflow: auto; border: 0; background: var(--color-paper); color: var(--color-ink); box-shadow: var(--shadow-soft); }
+.ui-dialog::backdrop { background: rgb(16 16 15 / 56%); backdrop-filter: blur(2px); }
+.ui-dialog__header, .ui-dialog__body, .ui-dialog__footer { padding: var(--card-padding); }
+.ui-dialog__header { border-bottom: var(--component-border); }
+.ui-dialog__footer { display: flex; justify-content: flex-end; gap: .75rem; border-top: var(--component-border); }
+
+@media (max-width: 35rem) {
+    .ui-button { width: 100%; }
+    .ui-dialog__footer { flex-direction: column-reverse; }
+    .ui-table :where(th, td) { padding-inline: .75rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -42,6 +42,20 @@ Apex Privé uses quiet, editorial luxury: generous negative space, strong typogr
 - Product cards: image, maison overline, product name, price, single primary action.
 - Empty states: centered, calm, one explanation and one next action.
 
+### Shared component API
+
+Build new UI from the opt-in classes in `Styling-guide.css` rather than restyling native elements page by page:
+
+- Forms: `.ui-field`, `.ui-label`, `.ui-input`, `.ui-textarea`, `.ui-help`, and `.ui-error`.
+- Dropdowns: wrap a native `<select>` with `.ui-select`; never replace native keyboard behavior with a decorative menu.
+- Radio buttons and checkboxes: `.ui-choice-group` contains `.ui-choice` labels with their native input inside.
+- Actions: `.ui-button`, `.ui-button--secondary`, and `.ui-button--quiet` are the only standard action levels.
+- Cards: `.ui-card`, `.ui-card__media`, `.ui-card__body`, `.ui-card__eyebrow`, `.ui-card__title`, and `.ui-card__text` preserve a consistent hierarchy.
+- Supporting UI: `.ui-badge`, `.ui-alert`, `.ui-empty`, `.ui-table`, `.ui-pagination`, `.ui-tabs`, `.ui-disclosure`, and `.ui-dialog`.
+- Icon controls: `.ui-icon-label`, `.ui-icon-box`, and `.ui-count` keep icons, labels, and counters optically aligned.
+
+All shared components are deliberately opt-in. To add one, define its editable tokens at the top of `Styling-guide.css`, add one `.ui-*` base class, include states for hover, focus, disabled, error, and mobile where applicable, then document the public class here. Do not add a global selector that silently changes an existing page.
+
 ## Responsive and accessibility rules
 
 - Breakpoints are content-led; primary layout changes occur around 900px, 800px, and 560px.
