@@ -62,11 +62,35 @@
       "source_file": "Bang and Olufsen logo.svg",
       "local_file": "bang-olufsen.svg"
     },
+    "berluti": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Berluti_logo_(2018).svg",
+      "source_file": "Berluti logo (2018).svg",
+      "local_file": "berluti.svg"
+    },
     "blancpain": {
       "status": "verified",
       "source_page": "https://commons.wikimedia.org/wiki/File:Blancpain_logo.svg",
       "source_file": "Blancpain logo.svg",
       "local_file": "blancpain.svg"
+    },
+    "boucheron": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Logo_of_Boucheron.svg",
+      "source_file": "Logo of Boucheron.svg",
+      "local_file": "boucheron.svg"
+    },
+    "bulgari": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bulgari_logo.svg",
+      "source_file": "Bulgari logo.svg",
+      "local_file": "bulgari.svg"
+    },
+    "burberry": {
+      "status": "verified",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Logo_Burberry_01.svg",
+      "source_file": "Logo Burberry 01.svg",
+      "local_file": "burberry.svg"
     },
     "chanel": {
       "status": "verified",
