@@ -2,8 +2,8 @@
 @section('title','Designers A–Z — Apex Privé')
 @section('content')
 <section class="brand-directory">
-    <header class="directory-hero"><p class="eyebrow">The house directory</p><h1>Designers <em>A–Z</em></h1><p>Discover defining names across fashion, horology, jewelry, beauty, interiors and travel.</p></header>
-    <div class="directory-stats" aria-label="Directory overview"><span><b>{{$total}}</b><small>Maisons</small></span><span><b>{{$niches->count()}}</b><small>Departments</small></span><span><b>Global</b><small>Curated selection</small></span></div>
+    <header class="directory-hero"><p class="eyebrow">Icons of exceptional craft</p><h1>The Luxury <em>Index</em></h1><p>Explore storied maisons and contemporary visionaries selected for their heritage, artistry and enduring influence.</p></header>
+    <div class="directory-stats" aria-label="Directory overview"><span><b>{{$total}}</b><small>Exceptional houses</small></span><span><b>{{$niches->count()}}</b><small>Curated worlds</small></span><span><b>Global</b><small>Legacy and vision</small></span></div>
     <div class="directory-layout">
         <aside class="directory-sidebar"><div><p>Browse by department</p><a class="{{request('niche')?'':'active'}}" href="{{route('brands.index')}}"><span>All maisons</span><b>{{$total}}</b></a>@foreach($niches as $niche)<a class="{{request('niche')===$niche?'active':''}}" href="{{route('brands.index',['niche'=>$niche])}}"><span>{{$niche}}</span><b>{{$nicheCounts[$niche]}}</b></a>@endforeach</div><p class="logo-note">Logos identify their respective trademark owners. Apex Privé is an independent marketplace.</p></aside>
         <div class="directory-content">
